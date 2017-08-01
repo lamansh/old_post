@@ -1,0 +1,12 @@
+; BIND version named 8.3.7-REL Tue Dec 13 12:43:58 EET 2005
+; BIND version root@post.nchadvisors.kiev.ua:/usr/obj/usr/src/libexec/named-xfer
+; zone '12.168.192.in-addr.arpa'   first transfer
+; from 192.168.12.1:53 (local 192.168.13.1) using AXFR at Tue Dec 20 15:27:37 2005
+; NOT TSIG verified
+$ORIGIN 168.192.in-addr.arpa.
+12	3600	IN	SOA	ns.nchadvisors.ru. bubba.nchadvisors.ru. (
+		2005042002 3600 900 3600000 3600 )
+	3600	IN	NS	ns.nchadvisors.ru.
+$ORIGIN 12.168.192.IN-ADDR.ARPA.
+1	3600	IN	PTR	tunnel.nchru.ipsec.
+11	3600	IN	PTR	ns.nchru.ipsec.

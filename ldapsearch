@@ -1,0 +1,2 @@
+ldapsearch -x -W -D cn=ldap,dc=nchadvisors -b "dc=nchadvisors"
+ldapsearch -x -W -D cn=ldap,dc=nchadvisors -b "dc=nchadvisors" "(cn=Oleg Sharov)"

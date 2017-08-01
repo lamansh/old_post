@@ -1,0 +1,1 @@
+ldapdelete -x -W -D cn=ldap,dc=nchadvisors "cn=Igor Gomenyuk,ou=nchkiev,dc=nchadvisors"

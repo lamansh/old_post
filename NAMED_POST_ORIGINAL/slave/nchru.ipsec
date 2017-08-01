@@ -1,0 +1,20 @@
+$ORIGIN .
+$TTL 3600	; 1 hour
+nchru.ipsec		IN SOA	ns.nchadvisors.ru. bubba.nchadvisors.ru. (
+				2008092901 ; serial
+				3600       ; refresh (1 hour)
+				900        ; retry (15 minutes)
+				3600000    ; expire (5 weeks 6 days 16 hours)
+				3600       ; minimum (1 hour)
+				)
+			NS	ns.nchru.ipsec.
+			HINFO	"i586" "FreeBSD-4.10"
+			MX	10 mx1.nchru.ipsec.
+			MX	20 mx2.nchru.ipsec.
+$ORIGIN nchru.ipsec.
+mx1			A	192.168.12.11
+mx2			A	192.168.12.1
+ns			A	192.168.12.11
+relay			A	192.168.12.11
+tunnel			A	192.168.12.1
+tunnel2			A	192.168.12.2

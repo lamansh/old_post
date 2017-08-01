@@ -1,0 +1,4 @@
+#!/bin/sh
+/usr/local/etc/rc.d/sa-spamd stop
+rm /bayes/.spamassassin/*
+/usr/local/etc/mimedefang/mimedefang.restart

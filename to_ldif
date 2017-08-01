@@ -1,0 +1,1 @@
+ev | awk '{ print "dn:"" "$1" "$2",""mail="$3"\n""cn:"" " $1" "$2"\n""mail:"" "$3"\n""givenName:"" "$1"\n""sn:"" "$2"\n""o:"" "$5"\n""ou:"" "$4"\n""telephoneNumber:"" "$7"\n""title:"" "$8"\n""objectclass: top""\n""objectclass: person""\n""\n"}'

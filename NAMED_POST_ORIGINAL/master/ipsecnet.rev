@@ -1,0 +1,11 @@
+$TTL 3600
+@	IN	SOA	relay.nchua.ipsec. root.relay.nchua.ipsec.  (
+				2008092402; Serial
+				3600	; Refresh
+				900	; Retry
+				3600000	; Expire
+				3600 )	; Minimum
+	IN	NS	relay.nchua.ipsec.
+
+1	IN	PTR	relay.nchua.ipsec.
+2	IN	PTR	acid.nchua.ipsec.

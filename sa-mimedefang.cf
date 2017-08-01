@@ -1,0 +1,289 @@
+# SpamAssassin user preferences file.
+#
+# Format:
+#
+#   required_hits n
+#		(how many hits are required to tag a mail as spam.)
+#
+#   score SYMBOLIC_TEST_NAME n
+#		(if this is omitted, 1 is used as a default score.
+#		Set the score to 0 to ignore the test.)
+#
+# # starts a comment, whitespace is not significant.
+#
+# NOTE!  In conjunction with MIMEDefang, SpamAssassin can *NOT* make any
+# changes to the message header or body.  Any SpamAssassin settings that
+# relate to changing the message will have *NO EFFECT* when used from
+# MIMEDefang.  Instead, use the various MIMEDefang Perl functions if you
+# need to alter the message.
+###########################################################################
+
+trusted_networks 64.144.66.11  64.144.66.12  64.144.66.105  64.144.66.121  64.144.66.130
+trusted_networks 38.108.226.11 38.108.226.12 38.108.226.105 38.108.226.121 38.108.226.130
+trusted_networks 192.168.0.1   192.168.0.2   192.168.0.3    192.168.0.6    192.168.0.7
+trusted_networks 192.168.0.8   192.168.0.11  192.168.0.12   192.168.0.105
+trusted_networks 192.168.0.153 192.168.0.158 192.168.0.159 192.168.0.160 192.168.0.161 192.168.0.162 192.168.0.234
+trusted_networks 192.168.0.242
+trusted_networks 192.168.10.0/24 192.168.11.0/24 192.168.12.0/24 192.168.13.0/24 192.168.14.0/24 192.168.15.0/24 172.16.10.0/24
+trusted_networks 78.107.139.8 # Moscow VOIP
+trusted_networks 192.168.0.45 # Joel's laptop
+
+###########################################################################
+# First of all, the generally useful stuff; thresholds and the whitelist
+# of addresses which, for some reason or another, often trigger false
+# positives.
+
+required_hits	4.5
+
+# Whitelist and blacklist addresses are *not* patterns; they're just normal
+# strings.  one exception is that "*@isp.com" is allowed.  They should be in
+# lower-case.  You can either add multiple addrs on one line,
+# whitespace-separated, or you can use multiple lines.
+#
+# Monty Solomon: he posts from an ISP that has often been the source of spam
+# (no fault of his own ;), and sometimes uses Bcc: when mailing.
+#
+# whitelist_from		monty@roscom.com
+
+whitelist_from          *@krayevyd-invest.com.ua
+whitelist_from		*@kraevid-invest.com.ua
+whitelist_from          *@gs-agro.com.ua
+whitelist_from		*@ms-agro.com.ua
+whitelist_from          *@nchcapital.com
+whitelist_from          *@bioagro.com.ua
+whitelist_from          *@subscribe.ru
+whitelist_from          *@dtz.kiev.ua
+whitelist_from          *@maillist.ru
+whitelist_from          *@spp.com.ua
+whitelist_from          *@ingbank.com
+whitelist_from          *@promin-agro.com.ua
+whitelist_from          *@agrotrader.com.ua
+whitelist_from          *@dragon-capital.com
+whitelist_from          *@vasko-nazarchuk.com
+whitelist_from          *@chamber.ua
+whitelist_from          *@vab.ua
+whitelist_from          *@foyil.com
+whitelist_from          *@ebrd.com
+whitelist_from          *@csiua.com
+whitelist_from          *@geshem.net
+whitelist_from          demyanov_vlad@yahoo.com
+whitelist_from          *@samsung.com
+whitelist_from          v_lunkan@voliacable.com
+whitelist_from          *@pfts.com
+whitelist_from          szbanca@mail.ru
+whitelist_from          *@nchcapital.ru
+whitelist_from          *@concorde.com.ua
+whitelist_from          emailserver@pop3.amadeus.net
+whitelist_from          *@worldservice.com.ua
+whitelist_from          yovayager@gmail.com
+whitelist_from          serg_007@online.ua
+whitelist_from          pinchuk@zeppelin.ua
+whitelist_from          adubets@i.ua
+whitelist_from          scfmr@mail.ru
+whitelist_from          capitalconsult@inbox.ru
+whitelist_from          *@poltavadiamond.com.ua
+whitelist_from          tlotsman@bk.ru
+whitelist_from          zempa@mail.ru
+whitelist_from          himich-ko@ukr.net
+whitelist_from		alboyko@yandex.ru
+whitelist_from		chemeris_roman27@mail.ru
+whitelist_from		tlotsman@bk.ru
+whitelist_from		kovalchuk2966@rambler.ru
+whitelist_from		*@ufc-capital.com
+whitelist_from		*@sta.gov.ua
+whitelist_from		bagsv@mail.ru
+whitelist_from		Ant-kasyan@yandex.ru
+whitelist_from		resurst@mail.ru
+whitelist_from		alisulhi@gmail.com
+whitelist_from		zvit@sta.gov.ua
+whitelist_from		vacheslavbondarenko@gmail.com
+whitelist_from          n.bondar@i.ua
+whitelist_from		wasil1963@mail.ru
+whitelist_from		vladimir.g71@online.ua
+whitelist_from		vladymyr_gryschenko@ukr.net
+whitelist_from		katya.kras@mail.ru
+whitelist_from		V.Voloseckiy@mail.ru
+whitelist_from          ypodvysotskiy@ukr.net
+whitelist_from          iAndrew@inagro.com.ua
+whitelist_from          lenandrew@mail.ru
+whitelist_from          la_mansh@mail.ru
+whitelist_from          *@cctvsoyuz.com.ua
+whitelist_from          *@inagro.com.ua
+whitelist_from           vk_55@mail.ru
+whitelist_from		storm13@list.ru
+whitelist_from		gudz@scafco.com.ua
+whitelist_from		filmix@yandex.ru
+whitelist_from		info@filmix.com.ua
+whitelist_from          *@raw-agro.com
+whitelist_from          *@mbosi.net
+whitelist_from          galina_bgf@mail.ru
+whitelist_from          sn_popova@mail.ru
+whitelist_from 		*@rcv.com.ua
+whitelist_from		mvintoniv@mail.ru
+whitelist_from		kaput_soi@mail.ru
+whitelist_from		kosagovo@mail.ru
+whitelist_from		kosagovo@yandex.ru
+whitelist_from		teruzbat@ukr.net
+whitelist_from          *@zvit.spov.com.ua
+whitelist_from		viktoria_pronina@mail.ru
+whitelist_from		sarra_10@mail.ru
+whitelist_from		agrobudmekh@ukr.net
+whitelist_from		taison_2009.81@mail.ru
+whitelist_from          tehnolog1@list.ru
+whitelist_from          truslov@pap.pl.ua
+whitelist_from          v.filimonovich@i.ua
+whitelist_from		oooistic-spb@yandex.ru
+whitelist_from		idan_2001@mail.ru
+whitelist_from		RubanTema@mail.ru
+whitelist_from          r-odeskabel@i.ua
+whitelist_from		*@msb.org.ua
+whitelist_from		*@msb.ua
+whitelist_from          julia@nchadvisors.kiev.ua
+# Add your blacklist entries in the same format...
+#
+blacklist_from		*@hinet.net
+blacklist_from          *@topgenerale.com
+blacklist_from          *@investopedia.com
+blacklist_from          *@scailer.com
+blacklist_from          *@ubr.ua
+blacklist_from          *@uol.ua
+blacklist_from          *@startua.com
+blacklist_from          *@ono.com
+blacklist_from          *@coattailinvestor.com
+blacklist_from          *@investopedia.com
+blacklist_from          *@premier-international.net
+blacklist_from          *@utg.kiev.ua
+blacklist_from          *@ekat.ru
+blacklist_from		*@agritel.com
+blacklist_from		*@composit.ru
+blacklist_from          java-apk@i.kiev.ua
+blacklist_from          *@juno.com
+blacklist_from          *@eftps.gov
+blacklist_from		*@ehost.kiev.ua
+blacklist_from		*@lequebecois.org
+blacklist_from		*@businessmonitor.com
+blacklist_from		*@execsense.com
+
+# Mail using languages used in these country codes will not be marked
+# as being possibly spam in a foreign language.
+#
+ok_locales		en ru ua cn
+
+# By default, the subject lines of suspected spam will be tagged.
+# This can be disabled here.
+#
+# rewrite_subject 0
+
+# By default, spamassassin will include its report in the body
+# of suspected spam. Enabling this causes the report to go in the
+# headers instead. Using 'use_terse_report' for this is recommended.
+#
+# report_header 1
+
+# By default, SpamAssassin uses a fairly long report format.
+# Enabling this uses a shorter format which includes all the
+# information in the normal one, but without the superfluous
+# explanations.
+#
+# use_terse_report 0
+
+# By default, spamassassin will change the Content-type: header of
+# suspected spam to "text/plain". This is a safety feature. If you
+# prefer to leave the Content-type header alone, set this to 0.
+#
+# defang_mime 0
+
+# By default, SpamAssassin will run RBL checks.  If your ISP already
+# does this, set this to 1.
+
+skip_rbl_checks 0
+
+###########################################################################
+# Add your own customised scores for some tests below.  The default scores are
+# read from the installed "spamassassin.cf" file, but you can override them
+# here.  To see the list of tests and their default scores, go to
+# http://spamassassin.taint.org/tests.html .
+
+# DP's Comments:
+# I played with bayes for a while. I now have new suggestions:
+
+# Define bayes_path ONLY if you need to override the location of the
+# databases (default is shown below). Instead of overriding it here you
+# probably should modify $sa_user_dir in local-filter.
+# It is a good idea to have same database for all mailservers, 
+# e.g. you can make it available to all your mailservers via NFS
+# I decided that I will keep bayes databases in
+# /usr/local/etc/mimedefang/bayes/.spamassassin
+# (technically it could be anywhere, as long as mailnull is the owner)
+# To simplify the configuration, I created a symbolic link from /bayes
+# to /usr/local/etc/mimedefang/bayes
+# on my primary machine. On other machines I mounted that directory from the
+# primary machine into /bayes (I used -maproot=mailnull:wheel)
+# I defined $sa_user_dir = '/bayes' in local-filter, and now the location of
+# my database files is under /bayes/.spamassasin/
+#bayes_path /var/spool/MIMEDefang/.spamassassin/bayes
+bayes_path /bayes/.spamassassin/bayes
+
+# SA default is 12.0, 6.0 is the minimum possible!
+bayes_auto_learn_threshold_spam 10.0
+
+# Seems to be resolving some locking problems for me:
+bayes_learn_to_journal 1
+
+# If you want to override the default location:
+#auto_whitelist_path /var/spool/MIMEDefang/.spamassassin/auto-whitelist
+#auto_whitelist_path /bayes/.spamassassin/auto-whitelist
+
+#auto_whitelist_factor 0.3
+
+# It seems to be necessary to sa-learn with --force-expire from cron, 
+# otherwise things may go wrong, especially in shared configuration.
+# If you set bayes_auto_expire to 0, make sure you have something like that
+# in your /etc/crontab:
+# 10	9	*	*	*	mailnull	cd /usr/local/etc/mimedefang && make expire 
+bayes_auto_expire 0
+bayes_expiry_max_db_size 1000000
+
+# skip unnecessary work done by SpamAssassin
+report_safe 0
+lock_method nfssafe
+
+# ignore some headers set by Pegasus and mimedefangi
+bayes_ignore_header Resent-Message-Id
+bayes_ignore_header Resent-from
+bayes_ignore_header Resent-to
+bayes_ignore_header Resent-Date
+bayes_ignore_header X-Spam-Score
+bayes_ignore_header X-Scanned-By
+
+score	URIBL_BLACK  3.0
+score	URIBL_GREY  0.25
+score	NA_DOLLARS  2.0
+score	MILLION_USD 2.0
+score	BAD_CREDIT  1.4
+score	BAYES_00    -3.5
+score	ALL_TRUSTED -1.5
+score   BAYES_99    4.5
+header   UNKNOWN_SERVER_MAILER Received =~ /unknown/i
+describe UNKNOWN_SERVER_MAILER Contain unknown in recived field
+score    UNKNOWN_SERVER_MAILER 3.0
+
+header   SCREAMING_HEADER Subject =~ /\!/i
+describe SCREAMING_HEADER TOO_LOUD_SUBJ
+score    SCREAMING_HEADER 3.0
+
+BODY     SCREAMING_BODY /\!/i
+describe SCREAMING_BODY TOO_LOUD_BODY
+score    SCREAMING_BODY 3.5
+
+header   NOT_TO_NCH To =~ /nchadvisors.kiev.ua/i
+describe NOT_TO_NCH to_foreign domain
+score    NOT_TO_NCH 0.0
+
+header   NOT_FROM_NCH From =~/nchadvisors.kiev.ua/i
+describe NOT_FROM_NCH from_foreign domain
+score    NOT_FROM_NCH 0.0
+
+meta     FROM_TO_NOT_NCH !NOT_FROM_NCH && !NOT_TO_NCH
+describe FROM_TO_NOT_NCH TO and FROM not our domain
+score    FROM_TO_NOT_NCH 5.5

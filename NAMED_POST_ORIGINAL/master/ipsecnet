@@ -1,0 +1,14 @@
+$TTL 3600
+@	IN	SOA	relay.nchua.ipsec. root.relay.nchua.ipsec.  (
+				2008092402 ; Serial
+				3600	; Refresh
+				900	; Retry
+				3600000	; Expire
+				3600 )	; Minimum
+		IN	NS	relay.nchua.ipsec.
+		IN	MX 1	relay
+		IN	MX 100	nch5.nchcapital.com.
+		
+relay		IN	A	192.168.13.1
+uucp		IN	A	192.168.13.1
+acid		IN	A	192.168.13.2

@@ -1,0 +1,9 @@
+#!/usr/local/bin/perl -w
+open FILE, "<users.txt" or die $!;
+my @lines = <FILE>;
+foreach $line (@lines){
+    ($name, $password) = split (" ", $line);
+    system("/usr/local/bin/saslpasswd2", "-p", "$name");
+    spintf("$passwd");
+
+}

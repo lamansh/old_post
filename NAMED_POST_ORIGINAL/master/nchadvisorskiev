@@ -1,0 +1,58 @@
+$TTL 3600
+@	IN	SOA	post.nchadvisors.kiev.ua. root.post.nchadvisors.kiev.ua. (
+				2009101501; Serial
+				28800	  ; Refresh
+				3600      ; Retry
+				3600000	  ; Expire
+				3600 )	  ; Minimum
+		IN	NS	ns
+    		IN	NS	ns.nchcapital.com.
+		IN	MX 1	post
+		IN	MX 5	post3
+		IN	MX 10	nch5.nchcapital.com.
+		IN	MX 100	post2
+		IN 	TXT 	"v=spf1 ip4:62.244.28.234 mx mx:nchadvisors.kiev.ua mx:acid.nchadvisors.kiev.ua mx:nch5.nchcapital.com mx:post.nchadvisors.kiev.ua mx:post2.nchadvisors.kiev.ua -all"
+
+faxcom3		IN	A	62.244.3.193
+nch		IN	A	62.244.3.195
+nwserver	IN	A	62.244.3.196
+voip		IN	A	62.244.3.197
+ipsec		IN	A	62.244.3.200
+post		IN	A	62.244.3.201
+post2		IN	A	62.244.3.201
+ns		IN	A	62.244.3.201
+vsx3000		IN	A	62.244.3.203
+vsx6000		IN	A	62.244.3.202
+1cs		IN	A	62.244.3.204
+1cter		IN	A	62.244.3.205
+post3		IN	A	62.244.3.206
+general		IN	A	62.244.3.207
+dhcp224		IN	A	62.244.3.224
+dhcp225		IN	A	62.244.3.225
+dhcp226		IN	A	62.244.3.226
+dhcp227		IN	A	62.244.3.227
+dhcp228		IN	A	62.244.3.228
+dhcp229		IN	A	62.244.3.229
+dhcp230		IN	A	62.244.3.230
+dhcp231		IN	A	62.244.3.231
+dhcp232		IN	A	62.244.3.232
+dhcp233		IN	A	62.244.3.233
+dhcp234		IN	A	62.244.3.234
+dhcp235		IN	A	62.244.3.235
+dhcp236		IN	A	62.244.3.236
+dhcp237		IN	A	62.244.3.237
+dhcp238		IN	A	62.244.3.238
+dhcp239		IN	A	62.244.3.239
+dhcp240		IN	A	62.244.3.240
+dhcp241		IN	A	62.244.3.241
+dhcp242		IN	A	62.244.3.242
+dhcp243		IN	A	62.244.3.243
+dhcp244		IN	A	62.244.3.244
+dhcp245		IN	A	62.244.3.245
+acid		IN	A	62.244.3.252
+www		IN	CNAME	acid
+smtpsrv		IN	CNAME	post
+pop3srv		IN	CNAME	nch
+faxcom2		IN	CNAME	faxcom2.nchadvisors.ru.
+faxcom1		IN	CNAME	faxcom1.nchcapital.com.
+faxcom4		IN	CNAME	faxcom4.nchriga.lv.

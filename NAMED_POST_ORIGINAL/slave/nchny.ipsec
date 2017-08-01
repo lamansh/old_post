@@ -1,0 +1,23 @@
+$ORIGIN .
+$TTL 3600	; 1 hour
+nchny.ipsec		IN SOA	ns.nchcapital.com. root.nchny.nchcapital.com. (
+				2009090102 ; serial
+				3600       ; refresh (1 hour)
+				900        ; retry (15 minutes)
+				3600000    ; expire (5 weeks 6 days 16 hours)
+				3600       ; minimum (1 hour)
+				)
+			NS	ns.nchny.ipsec.
+			HINFO	"i586" "FreeBSD-6.2"
+			MX	10 nch1.nchny.ipsec.
+			MX	10 nch2.nchny.ipsec.
+$ORIGIN nchny.ipsec.
+nch1			A	192.168.11.2
+nch2			A	192.168.11.12
+nch4			A	192.168.11.3
+nch5			A	192.168.11.105
+ns			A	192.168.11.1
+relay			CNAME	nch1
+tunnel			A	192.168.11.1
+tunnel2			A	192.168.11.2
+uucp			CNAME	nch1

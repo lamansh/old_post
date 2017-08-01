@@ -1,0 +1,13 @@
+; BIND version named 8.3.7-REL Tue Dec 13 12:43:58 EET 2005
+; BIND version root@post.nchadvisors.kiev.ua:/usr/obj/usr/src/libexec/named-xfer
+; zone '11.168.192.in-addr.arpa'   last serial 2005030101
+; from 192.168.11.1:53 (local 192.168.13.1) using AXFR at Thu Feb  2 23:03:39 2006
+; NOT TSIG verified
+$ORIGIN 168.192.in-addr.arpa.
+11	3600	IN	SOA	ns.nchcapital.com. root.nchny.nchcapital.com. (
+		2006013101 3600 900 3600000 3600 )
+	3600	IN	NS	ns.nchcapital.com.
+$ORIGIN 11.168.192.IN-ADDR.ARPA.
+1	3600	IN	PTR	tunnel.nchny.ipsec.
+3	3600	IN	PTR	nch4.nchny.ipsec.
+105	3600	IN	PTR	uucp.nchny.ipsec.

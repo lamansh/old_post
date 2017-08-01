@@ -1,0 +1,8 @@
+openssl dsaparam -rand -genkey -out myRSA.key 1024
+#generating privat key
+openssl gendsa -des3 -out myca.key myRSA.key
+#generating public CA key
+openssl req -new -x509 -days 365 -key myca.key -out mail.crt
+#generating self-signed cert
+chmod 700 myca.key
+chmod 700 mail.crt

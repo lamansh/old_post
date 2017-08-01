@@ -1,0 +1,16 @@
+$ORIGIN .
+$TTL 3600	; 1 hour
+11.168.192.in-addr.arpa	IN SOA	ns.nchcapital.com. root.nchny.nchcapital.com. (
+				2009090101 ; serial
+				3600       ; refresh (1 hour)
+				900        ; retry (15 minutes)
+				3600000    ; expire (5 weeks 6 days 16 hours)
+				3600       ; minimum (1 hour)
+				)
+			NS	ns.nchcapital.com.
+$ORIGIN 11.168.192.in-addr.arpa.
+1			PTR	tunnel.nchny.ipsec.
+105			PTR	nch5.nchny.ipsec.
+12			PTR	nch2.nchny.ipsec.
+2			PTR	nch1.nchny.ipsec.
+3			PTR	nch4.nchny.ipsec.

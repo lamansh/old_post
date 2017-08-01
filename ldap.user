@@ -1,0 +1,9 @@
+dn: cn=Inna Garkavaya,ou=nchkiev,dc=nchadvisors
+cn: Inna Garkavaya
+o: NCH Advisors
+objectClass: inetOrgPerson
+objectClass: top
+#title:
+mail: igarkavaya@nchadvisors.kiev.ua
+telephoneNumber: 148
+sn: Inna Garkavaya

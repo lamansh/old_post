@@ -1,0 +1,44 @@
+$TTL 3600
+@	IN	SOA	post.nchadvisors.kiev.ua. root.post.nchadvisors.kiev.ua.  (
+				2009101501	; Serial
+				28800	; Refresh
+				3600	; Retry
+				3600000	; Expire
+				3600 )	; Minimum
+	IN	NS	ns.nchadvisors.kiev.ua.
+
+193	IN	PTR	faxcom3.nchadvisors.kiev.ua.
+195	IN	PTR	nch.nchadvisors.kiev.ua.
+196	IN	PTR	nwserver.nchadvisors.kiev.ua.
+197	IN	PTR	voip.nchadvisors.kiev.ua.
+200	IN	PTR	ipsec.nchadvisors.kiev.ua.
+201	IN	PTR	post.nchadvisors.kiev.ua.
+202	IN	PTR	vsx6000.nchadvisors.kiev.ua.
+203	IN	PTR	vsx3000.nchadvisors.kiev.ua.
+204	IN	PTR	1cs.nchadvisors.kiev.ua.
+205	IN	PTR	1cter.nchadvisors.kiev.ua.
+206	IN	PTR	post3.nchadvisors.kiev.ua.
+207	IN	PTR	general.nch.local.
+224	IN	PTR	dhcp224.nchadvisors.kiev.ua.
+225	IN	PTR	dhcp225.nchadvisors.kiev.ua.
+226	IN	PTR	dhcp226.nchadvisors.kiev.ua.
+227	IN	PTR	dhcp227.nchadvisors.kiev.ua.
+228	IN	PTR	dhcp228.nchadvisors.kiev.ua.
+229	IN	PTR	dhcp229.nchadvisors.kiev.ua.
+230	IN	PTR	dhcp230.nchadvisors.kiev.ua.
+231	IN	PTR	dhcp231.nchadvisors.kiev.ua.
+232	IN	PTR	dhcp232.nchadvisors.kiev.ua.
+233	IN	PTR	dhcp233.nchadvisors.kiev.ua.
+234	IN	PTR	dhcp234.nchadvisors.kiev.ua.
+235	IN	PTR	dhcp235.nchadvisors.kiev.ua.
+236	IN	PTR	dhcp236.nchadvisors.kiev.ua.
+237	IN	PTR	dhcp237.nchadvisors.kiev.ua.
+238	IN	PTR	dhcp238.nchadvisors.kiev.ua.
+239	IN	PTR	dhcp239.nchadvisors.kiev.ua.
+240	IN	PTR	dhcp240.nchadvisors.kiev.ua.
+241	IN	PTR	dhcp241.nchadvisors.kiev.ua.
+242	IN	PTR	dhcp242.nchadvisors.kiev.ua.
+243	IN	PTR	dhcp243.nchadvisors.kiev.ua.
+244	IN	PTR	dhcp244.nchadvisors.kiev.ua.
+245	IN	PTR	dhcp245.nchadvisors.kiev.ua.
+252	IN	PTR	acid.nchadvisors.kiev.ua.

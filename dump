@@ -1,0 +1,590 @@
+Jul 11 13:03:38.990 [63571] dbg: logger: adding facilities: all
+Jul 11 13:03:38.990 [63571] dbg: logger: logging level is DBG
+Jul 11 13:03:38.990 [63571] dbg: generic: SpamAssassin version 3.3.1
+Jul 11 13:03:38.990 [63571] dbg: generic: Perl 5.010001, PREFIX=/usr/local, DEF_RULES_DIR=/usr/local/share/spamassassin, LOCAL_RULES_DIR=/usr/local/etc/mail/spamassassin, LOCAL_STATE_DIR=/var/db/spamassassin
+Jul 11 13:03:38.990 [63571] dbg: config: timing enabled
+Jul 11 13:03:38.991 [63571] dbg: config: score set 0 chosen.
+Jul 11 13:03:38.992 [63571] dbg: util: running in taint mode? yes
+Jul 11 13:03:38.992 [63571] dbg: util: taint mode: deleting unsafe environment variables, resetting PATH
+Jul 11 13:03:38.992 [63571] dbg: util: PATH included '/sbin', keeping
+Jul 11 13:03:38.992 [63571] dbg: util: PATH included '/bin', keeping
+Jul 11 13:03:38.992 [63571] dbg: util: PATH included '/usr/sbin', keeping
+Jul 11 13:03:38.993 [63571] dbg: util: PATH included '/usr/bin', keeping
+Jul 11 13:03:38.993 [63571] dbg: util: PATH included '/usr/games', keeping
+Jul 11 13:03:38.993 [63571] dbg: util: PATH included '/usr/local/sbin', keeping
+Jul 11 13:03:38.993 [63571] dbg: util: PATH included '/usr/local/bin', keeping
+Jul 11 13:03:38.993 [63571] dbg: util: PATH included '/home/sharov/bin', which is unusable, dropping: No such file or directory
+Jul 11 13:03:38.993 [63571] dbg: util: final PATH set to: /sbin:/bin:/usr/sbin:/usr/bin:/usr/games:/usr/local/sbin:/usr/local/bin
+Jul 11 13:03:38.997 [63571] dbg: dns: is Net::DNS::Resolver available? yes
+Jul 11 13:03:38.997 [63571] dbg: dns: Net::DNS version: 0.66
+Jul 11 13:03:39.256 [63571] dbg: diag: perl platform: 5.010001 freebsd
+Jul 11 13:03:39.256 [63571] dbg: diag: [...] module installed: Digest::SHA1, version 2.13
+Jul 11 13:03:39.257 [63571] dbg: diag: [...] module installed: HTML::Parser, version 3.68
+Jul 11 13:03:39.257 [63571] dbg: diag: [...] module installed: Net::DNS, version 0.66
+Jul 11 13:03:39.257 [63571] dbg: diag: [...] module installed: NetAddr::IP, version 4.038
+Jul 11 13:03:39.257 [63571] dbg: diag: [...] module installed: Time::HiRes, version 1.9719
+Jul 11 13:03:39.257 [63571] dbg: diag: [...] module installed: Archive::Tar, version 1.76
+Jul 11 13:03:39.257 [63571] dbg: diag: [...] module installed: IO::Zlib, version 1.10
+Jul 11 13:03:39.257 [63571] dbg: diag: [...] module installed: Digest::SHA1, version 2.13
+Jul 11 13:03:39.257 [63571] dbg: diag: [...] module installed: MIME::Base64, version 3.13
+Jul 11 13:03:39.257 [63571] dbg: diag: [...] module installed: DB_File, version 1.822
+Jul 11 13:03:39.257 [63571] dbg: diag: [...] module installed: Net::SMTP, version 2.31
+Jul 11 13:03:39.257 [63571] dbg: diag: [...] module installed: Mail::SPF, version v2.007
+Jul 11 13:03:39.257 [63571] dbg: diag: [...] module installed: IP::Country::Fast, version 604.001
+Jul 11 13:03:39.257 [63571] dbg: diag: [...] module installed: Razor2::Client::Agent, version 2.84
+Jul 11 13:03:39.257 [63571] dbg: diag: [...] module not installed: Net::Ident ('require' failed)
+Jul 11 13:03:39.257 [63571] dbg: diag: [...] module installed: IO::Socket::INET6, version 2.67
+Jul 11 13:03:39.257 [63571] dbg: diag: [...] module installed: IO::Socket::SSL, version 1.39
+Jul 11 13:03:39.257 [63571] dbg: diag: [...] module installed: Compress::Zlib, version 2.033
+Jul 11 13:03:39.257 [63571] dbg: diag: [...] module installed: Mail::DKIM, version 0.39
+Jul 11 13:03:39.257 [63571] dbg: diag: [...] module installed: DBI, version 1.616
+Jul 11 13:03:39.257 [63571] dbg: diag: [...] module installed: Getopt::Long, version 2.38
+Jul 11 13:03:39.257 [63571] dbg: diag: [...] module installed: LWP::UserAgent, version 5.835
+Jul 11 13:03:39.258 [63571] dbg: diag: [...] module installed: HTTP::Date, version 6.00
+Jul 11 13:03:39.258 [63571] dbg: diag: [...] module installed: Encode::Detect, version 1.01
+Jul 11 13:03:39.258 [63571] dbg: ignore: using a test message to lint rules
+Jul 11 13:03:39.258 [63571] dbg: config: using "/usr/local/etc/mail/spamassassin" for site rules pre files
+Jul 11 13:03:39.258 [63571] dbg: config: read file /usr/local/etc/mail/spamassassin/init.pre
+Jul 11 13:03:39.258 [63571] dbg: config: read file /usr/local/etc/mail/spamassassin/v310.pre
+Jul 11 13:03:39.259 [63571] dbg: config: read file /usr/local/etc/mail/spamassassin/v312.pre
+Jul 11 13:03:39.259 [63571] dbg: config: read file /usr/local/etc/mail/spamassassin/v320.pre
+Jul 11 13:03:39.259 [63571] dbg: config: read file /usr/local/etc/mail/spamassassin/v330.pre
+Jul 11 13:03:39.259 [63571] dbg: config: using "/var/db/spamassassin/3.003001" for sys rules pre files
+Jul 11 13:03:39.259 [63571] dbg: config: using "/var/db/spamassassin/3.003001" for default rules dir
+Jul 11 13:03:39.259 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org.cf
+Jul 11 13:03:39.260 [63571] dbg: config: using "/usr/local/etc/mail/spamassassin" for site rules dir
+Jul 11 13:03:39.260 [63571] dbg: config: read file /usr/local/etc/mail/spamassassin/local.cf
+Jul 11 13:03:39.260 [63571] dbg: config: using "/home/sharov/.spamassassin/user_prefs" for user prefs file
+Jul 11 13:03:39.260 [63571] dbg: config: read file /home/sharov/.spamassassin/user_prefs
+Jul 11 13:03:39.262 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::URIDNSBL from @INC
+Jul 11 13:03:39.268 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::Hashcash from @INC
+Jul 11 13:03:39.270 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::SPF from @INC
+Jul 11 13:03:39.275 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::Pyzor from @INC
+Jul 11 13:03:39.277 [63571] dbg: pyzor: local tests only, disabling Pyzor
+Jul 11 13:03:39.278 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::Razor2 from @INC
+Jul 11 13:03:39.280 [63571] dbg: razor2: local tests only, skipping Razor
+Jul 11 13:03:39.280 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::SpamCop from @INC
+Jul 11 13:03:39.283 [63571] dbg: reporter: local tests only, disabling SpamCop
+Jul 11 13:03:39.283 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::AutoLearnThreshold from @INC
+Jul 11 13:03:39.285 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::WhiteListSubject from @INC
+Jul 11 13:03:39.286 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::MIMEHeader from @INC
+Jul 11 13:03:39.287 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::ReplaceTags from @INC
+Jul 11 13:03:39.289 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::Check from @INC
+Jul 11 13:03:39.298 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::HTTPSMismatch from @INC
+Jul 11 13:03:39.299 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::URIDetail from @INC
+Jul 11 13:03:39.301 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::Bayes from @INC
+Jul 11 13:03:39.312 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::BodyEval from @INC
+Jul 11 13:03:39.314 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::DNSEval from @INC
+Jul 11 13:03:39.317 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::HTMLEval from @INC
+Jul 11 13:03:39.319 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::HeaderEval from @INC
+Jul 11 13:03:39.327 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::MIMEEval from @INC
+Jul 11 13:03:39.330 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::RelayEval from @INC
+Jul 11 13:03:39.333 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::URIEval from @INC
+Jul 11 13:03:39.334 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::WLBLEval from @INC
+Jul 11 13:03:39.337 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::VBounce from @INC
+Jul 11 13:03:39.338 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::Rule2XSBody from @INC
+Jul 11 13:03:39.341 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::ImageInfo from @INC
+Jul 11 13:03:39.344 [63571] dbg: plugin: loading Mail::SpamAssassin::Plugin::FreeMail from @INC
+Jul 11 13:03:39.348 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/99_russian_win1251_re.cf
+Jul 11 13:03:39.348 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/99_russian_win1251_re.cf" for included file
+Jul 11 13:03:39.350 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/99_russian_win1251_re.cf
+Jul 11 13:03:39.387 [63571] warn: config: regexp for rule __RU_CATER_3_WIN1251 always matches due to '||'
+Jul 11 13:03:39.511 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/10_default_prefs.cf
+Jul 11 13:03:39.512 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/10_default_prefs.cf" for included file
+Jul 11 13:03:39.512 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/10_default_prefs.cf
+Jul 11 13:03:39.515 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/20_advance_fee.cf
+Jul 11 13:03:39.515 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/20_advance_fee.cf" for included file
+Jul 11 13:03:39.515 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/20_advance_fee.cf
+Jul 11 13:03:39.521 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/20_aux_tlds.cf
+Jul 11 13:03:39.521 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/20_aux_tlds.cf" for included file
+Jul 11 13:03:39.521 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/20_aux_tlds.cf
+Jul 11 13:03:39.528 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/20_body_tests.cf
+Jul 11 13:03:39.528 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/20_body_tests.cf" for included file
+Jul 11 13:03:39.528 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/20_body_tests.cf
+Jul 11 13:03:39.533 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/20_compensate.cf
+Jul 11 13:03:39.534 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/20_compensate.cf" for included file
+Jul 11 13:03:39.534 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/20_compensate.cf
+Jul 11 13:03:39.535 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/20_dnsbl_tests.cf
+Jul 11 13:03:39.535 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/20_dnsbl_tests.cf" for included file
+Jul 11 13:03:39.535 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/20_dnsbl_tests.cf
+Jul 11 13:03:39.542 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/20_drugs.cf
+Jul 11 13:03:39.542 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/20_drugs.cf" for included file
+Jul 11 13:03:39.542 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/20_drugs.cf
+Jul 11 13:03:39.556 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/20_dynrdns.cf
+Jul 11 13:03:39.556 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/20_dynrdns.cf" for included file
+Jul 11 13:03:39.556 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/20_dynrdns.cf
+Jul 11 13:03:39.564 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/20_fake_helo_tests.cf
+Jul 11 13:03:39.564 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/20_fake_helo_tests.cf" for included file
+Jul 11 13:03:39.564 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/20_fake_helo_tests.cf
+Jul 11 13:03:39.568 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/20_freemail.cf
+Jul 11 13:03:39.568 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/20_freemail.cf" for included file
+Jul 11 13:03:39.569 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/20_freemail.cf
+Jul 11 13:03:39.571 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/20_freemail_domains.cf
+Jul 11 13:03:39.571 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/20_freemail_domains.cf" for included file
+Jul 11 13:03:39.571 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/20_freemail_domains.cf
+Jul 11 13:03:39.573 [63571] dbg: plugin: Mail::SpamAssassin::Plugin::FreeMail=HASH(0x9c718c4) implements 'parse_config', priority 0
+Jul 11 13:03:39.597 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/20_head_tests.cf
+Jul 11 13:03:39.597 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/20_head_tests.cf" for included file
+Jul 11 13:03:39.597 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/20_head_tests.cf
+Jul 11 13:03:39.625 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/20_html_tests.cf
+Jul 11 13:03:39.625 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/20_html_tests.cf" for included file
+Jul 11 13:03:39.625 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/20_html_tests.cf
+Jul 11 13:03:39.635 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/20_imageinfo.cf
+Jul 11 13:03:39.635 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/20_imageinfo.cf" for included file
+Jul 11 13:03:39.635 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/20_imageinfo.cf
+Jul 11 13:03:39.638 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/20_meta_tests.cf
+Jul 11 13:03:39.638 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/20_meta_tests.cf" for included file
+Jul 11 13:03:39.638 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/20_meta_tests.cf
+Jul 11 13:03:39.641 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/20_net_tests.cf
+Jul 11 13:03:39.641 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/20_net_tests.cf" for included file
+Jul 11 13:03:39.641 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/20_net_tests.cf
+Jul 11 13:03:39.642 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/20_phrases.cf
+Jul 11 13:03:39.643 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/20_phrases.cf" for included file
+Jul 11 13:03:39.643 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/20_phrases.cf
+Jul 11 13:03:39.652 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/20_porn.cf
+Jul 11 13:03:39.652 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/20_porn.cf" for included file
+Jul 11 13:03:39.652 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/20_porn.cf
+Jul 11 13:03:39.654 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/20_ratware.cf
+Jul 11 13:03:39.654 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/20_ratware.cf" for included file
+Jul 11 13:03:39.654 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/20_ratware.cf
+Jul 11 13:03:39.670 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/20_uri_tests.cf
+Jul 11 13:03:39.670 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/20_uri_tests.cf" for included file
+Jul 11 13:03:39.671 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/20_uri_tests.cf
+Jul 11 13:03:39.676 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/20_vbounce.cf
+Jul 11 13:03:39.676 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/20_vbounce.cf" for included file
+Jul 11 13:03:39.676 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/20_vbounce.cf
+Jul 11 13:03:39.695 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/23_bayes.cf
+Jul 11 13:03:39.695 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/23_bayes.cf" for included file
+Jul 11 13:03:39.695 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/23_bayes.cf
+Jul 11 13:03:39.697 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/25_accessdb.cf
+Jul 11 13:03:39.697 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/25_accessdb.cf" for included file
+Jul 11 13:03:39.697 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/25_accessdb.cf
+Jul 11 13:03:39.698 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/25_antivirus.cf
+Jul 11 13:03:39.698 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/25_antivirus.cf" for included file
+Jul 11 13:03:39.698 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/25_antivirus.cf
+Jul 11 13:03:39.699 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/25_asn.cf
+Jul 11 13:03:39.699 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/25_asn.cf" for included file
+Jul 11 13:03:39.699 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/25_asn.cf
+Jul 11 13:03:39.699 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/25_dcc.cf
+Jul 11 13:03:39.699 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/25_dcc.cf" for included file
+Jul 11 13:03:39.700 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/25_dcc.cf
+Jul 11 13:03:39.700 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/25_dkim.cf
+Jul 11 13:03:39.700 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/25_dkim.cf" for included file
+Jul 11 13:03:39.701 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/25_dkim.cf
+Jul 11 13:03:39.702 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/25_hashcash.cf
+Jul 11 13:03:39.702 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/25_hashcash.cf" for included file
+Jul 11 13:03:39.702 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/25_hashcash.cf
+Jul 11 13:03:39.704 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/25_pyzor.cf
+Jul 11 13:03:39.704 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/25_pyzor.cf" for included file
+Jul 11 13:03:39.704 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/25_pyzor.cf
+Jul 11 13:03:39.705 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/25_razor2.cf
+Jul 11 13:03:39.705 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/25_razor2.cf" for included file
+Jul 11 13:03:39.705 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/25_razor2.cf
+Jul 11 13:03:39.707 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/25_replace.cf
+Jul 11 13:03:39.707 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/25_replace.cf" for included file
+Jul 11 13:03:39.707 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/25_replace.cf
+Jul 11 13:03:39.716 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/25_spf.cf
+Jul 11 13:03:39.716 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/25_spf.cf" for included file
+Jul 11 13:03:39.716 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/25_spf.cf
+Jul 11 13:03:39.718 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/25_textcat.cf
+Jul 11 13:03:39.718 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/25_textcat.cf" for included file
+Jul 11 13:03:39.718 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/25_textcat.cf
+Jul 11 13:03:39.719 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/25_uribl.cf
+Jul 11 13:03:39.719 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/25_uribl.cf" for included file
+Jul 11 13:03:39.719 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/25_uribl.cf
+Jul 11 13:03:39.725 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/30_text_de.cf
+Jul 11 13:03:39.725 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/30_text_de.cf" for included file
+Jul 11 13:03:39.725 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/30_text_de.cf
+Jul 11 13:03:39.731 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/30_text_fr.cf
+Jul 11 13:03:39.731 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/30_text_fr.cf" for included file
+Jul 11 13:03:39.731 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/30_text_fr.cf
+Jul 11 13:03:39.735 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/30_text_it.cf
+Jul 11 13:03:39.735 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/30_text_it.cf" for included file
+Jul 11 13:03:39.735 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/30_text_it.cf
+Jul 11 13:03:39.735 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/30_text_nl.cf
+Jul 11 13:03:39.735 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/30_text_nl.cf" for included file
+Jul 11 13:03:39.736 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/30_text_nl.cf
+Jul 11 13:03:39.739 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/30_text_pl.cf
+Jul 11 13:03:39.739 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/30_text_pl.cf" for included file
+Jul 11 13:03:39.740 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/30_text_pl.cf
+Jul 11 13:03:39.743 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/30_text_pt_br.cf
+Jul 11 13:03:39.743 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/30_text_pt_br.cf" for included file
+Jul 11 13:03:39.743 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/30_text_pt_br.cf
+Jul 11 13:03:39.744 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/50_scores.cf
+Jul 11 13:03:39.744 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/50_scores.cf" for included file
+Jul 11 13:03:39.745 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/50_scores.cf
+Jul 11 13:03:39.803 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/60_adsp_override_dkim.cf
+Jul 11 13:03:39.803 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/60_adsp_override_dkim.cf" for included file
+Jul 11 13:03:39.803 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/60_adsp_override_dkim.cf
+Jul 11 13:03:39.806 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/60_awl.cf
+Jul 11 13:03:39.806 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/60_awl.cf" for included file
+Jul 11 13:03:39.806 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/60_awl.cf
+Jul 11 13:03:39.806 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/60_shortcircuit.cf
+Jul 11 13:03:39.806 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/60_shortcircuit.cf" for included file
+Jul 11 13:03:39.807 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/60_shortcircuit.cf
+Jul 11 13:03:39.807 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/60_whitelist.cf
+Jul 11 13:03:39.807 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/60_whitelist.cf" for included file
+Jul 11 13:03:39.808 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/60_whitelist.cf
+Jul 11 13:03:39.811 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/60_whitelist_dkim.cf
+Jul 11 13:03:39.811 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/60_whitelist_dkim.cf" for included file
+Jul 11 13:03:39.811 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/60_whitelist_dkim.cf
+Jul 11 13:03:39.813 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/60_whitelist_spf.cf
+Jul 11 13:03:39.813 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/60_whitelist_spf.cf" for included file
+Jul 11 13:03:39.813 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/60_whitelist_spf.cf
+Jul 11 13:03:39.815 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/60_whitelist_subject.cf
+Jul 11 13:03:39.815 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/60_whitelist_subject.cf" for included file
+Jul 11 13:03:39.815 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/60_whitelist_subject.cf
+Jul 11 13:03:39.816 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/72_active.cf
+Jul 11 13:03:39.816 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/72_active.cf" for included file
+Jul 11 13:03:39.817 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/72_active.cf
+Jul 11 13:03:39.979 [63571] dbg: config: uri_detail adding (text =~ /(?-xism:(?i)\b(?:cli(?:quez\W|ck\Wa)ici\b|cli(?:cca\W|c\Wa|que\Wa)qu[^<.,a ]|klie?k(?:\Whi?er|ni(?:j|nite)\Wtu[tk]aj)\b))/) to T_KHOP_FOREIGN_CLICK
+Jul 11 13:03:39.979 [63571] dbg: config: uri_detail added T_KHOP_FOREIGN_CLICK
+Jul 11 13:03:40.072 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/72_scores.cf
+Jul 11 13:03:40.072 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/72_scores.cf" for included file
+Jul 11 13:03:40.072 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/72_scores.cf
+Jul 11 13:03:40.079 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/73_sandbox_manual_scores.cf
+Jul 11 13:03:40.079 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/73_sandbox_manual_scores.cf" for included file
+Jul 11 13:03:40.079 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/73_sandbox_manual_scores.cf
+Jul 11 13:03:40.080 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/local.cf
+Jul 11 13:03:40.080 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/local.cf" for included file
+Jul 11 13:03:40.080 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/local.cf
+Jul 11 13:03:40.081 [63571] dbg: config: fixed relative path: /var/db/spamassassin/3.003001/updates_spamassassin_org/regression_tests.cf
+Jul 11 13:03:40.081 [63571] dbg: config: using "/var/db/spamassassin/3.003001/updates_spamassassin_org/regression_tests.cf" for included file
+Jul 11 13:03:40.081 [63571] dbg: config: read file /var/db/spamassassin/3.003001/updates_spamassassin_org/regression_tests.cf
+Jul 11 13:03:40.144 [63571] dbg: config: warning: score set for non-existent rule AXB_XMID_1212
+Jul 11 13:03:40.144 [63571] dbg: config: warning: score set for non-existent rule AXB_XM_SENDMAIL_NOT
+Jul 11 13:03:40.144 [63571] dbg: config: warning: score set for non-existent rule TVD_PH_SUBJ_URGENT
+Jul 11 13:03:40.144 [63571] dbg: config: warning: score set for non-existent rule AXB_XMID_1510
+Jul 11 13:03:40.145 [63571] dbg: config: warning: score set for non-existent rule MANY_PILL_PRICE
+Jul 11 13:03:40.145 [63571] dbg: config: warning: score set for non-existent rule AXB_XMID_OEGOESNULL
+Jul 11 13:03:40.146 [63571] dbg: config: warning: score set for non-existent rule TVD_PH_SUBJ_ACCOUNTS_POST
+Jul 11 13:03:40.146 [63571] dbg: config: warning: score set for non-existent rule TVD_PH_SUBJ_SEC_MEASURES
+Jul 11 13:03:40.146 [63571] dbg: config: warning: score set for non-existent rule AXB_XR_STULDAP
+Jul 11 13:03:42.857 [63571] dbg: rules: __MO_OL_9B90B merged duplicates: __MO_OL_C65FA
+Jul 11 13:03:42.857 [63571] dbg: rules: __XM_OL_22B61 merged duplicates: __XM_OL_A842E
+Jul 11 13:03:42.857 [63571] dbg: rules: __MO_OL_07794 merged duplicates: __MO_OL_8627E __MO_OL_F3B05
+Jul 11 13:03:42.857 [63571] dbg: rules: __JM_REACTOR_DATE merged duplicates: __RATWARE_0_TZ_DATE
+Jul 11 13:03:42.857 [63571] dbg: rules: __XM_OL_07794 merged duplicates: __XM_OL_25340 __XM_OL_3857F __XM_OL_4F240 __XM_OL_58CB5 __XM_OL_6554A __XM_OL_812FF __XM_OL_C65FA __XM_OL_CF0C0 __XM_OL_F475E __XM_OL_F6D01
+Jul 11 13:03:42.857 [63571] dbg: rules: __HAS_REPLY_TO merged duplicates: __REPLYTO_EXISTS
+Jul 11 13:03:42.858 [63571] dbg: rules: FH_MSGID_01C67 merged duplicates: __MSGID_VGA
+Jul 11 13:03:42.858 [63571] dbg: rules: FS_NEW_SOFT_UPLOAD merged duplicates: HS_SUBJ_NEW_SOFTWARE
+Jul 11 13:03:42.858 [63571] dbg: rules: __MO_OL_91287 merged duplicates: __MO_OL_B30D1 __MO_OL_CF0C0
+Jul 11 13:03:42.858 [63571] dbg: rules: __XM_OL_015D5 merged duplicates: __XM_OL_4BF4C __XM_OL_4EEDB __XM_OL_5B79A __XM_OL_9B90B __XM_OL_ADFF7 __XM_OL_B30D1 __XM_OL_B4B40 __XM_OL_BC7E6 __XM_OL_F3B05 __XM_OL_FF5C8
+Jul 11 13:03:42.858 [63571] dbg: rules: __MO_OL_015D5 merged duplicates: __MO_OL_6554A
+Jul 11 13:03:42.858 [63571] dbg: rules: __MO_OL_22B61 merged duplicates: __MO_OL_4F240 __MO_OL_ADFF7
+Jul 11 13:03:42.858 [63571] dbg: rules: __MO_OL_812FF merged duplicates: __MO_OL_BC7E6
+Jul 11 13:03:42.858 [63571] dbg: rules: __MO_OL_25340 merged duplicates: __MO_OL_4EEDB __MO_OL_7533E
+Jul 11 13:03:42.858 [63571] dbg: rules: __DOS_HAS_MAILING_LIST merged duplicates: __ML4
+Jul 11 13:03:42.858 [63571] dbg: rules: __MO_OL_58CB5 merged duplicates: __MO_OL_B4B40
+Jul 11 13:03:42.859 [63571] dbg: rules: __DOS_HAS_ANY_URI merged duplicates: __HAS_ANY_URI
+Jul 11 13:03:42.859 [63571] dbg: rules: __FH_HAS_XMSMAIL merged duplicates: __HAS_MSMAIL_PRI
+Jul 11 13:03:42.859 [63571] dbg: rules: CTYPE_001C_A merged duplicates: DATE_IN_FUTURE_96_XX
+Jul 11 13:03:42.859 [63571] dbg: rules: __MO_OL_72641 merged duplicates: __MO_OL_A842E
+Jul 11 13:03:42.859 [63571] dbg: rules: __MO_OL_F475E merged duplicates: __MO_OL_FF5C8
+Jul 11 13:03:42.859 [63571] dbg: rules: __MO_OL_4BF4C merged duplicates: __MO_OL_F6D01
+Jul 11 13:03:42.860 [63571] dbg: config: finish parsing
+Jul 11 13:03:42.885 [63571] dbg: plugin: Mail::SpamAssassin::Plugin::ReplaceTags=HASH(0x9a31c5c) implements 'finish_parsing_end', priority 0
+Jul 11 13:03:42.885 [63571] dbg: plugin: Mail::SpamAssassin::Plugin::Rule2XSBody=HASH(0x9c51054) implements 'finish_parsing_end', priority 0
+Jul 11 13:03:42.886 [63571] dbg: plugin: Mail::SpamAssassin::Plugin::FreeMail=HASH(0x9c718c4) implements 'finish_parsing_end', priority 0
+Jul 11 13:03:42.886 [63571] dbg: replacetags: replacing tags
+Jul 11 13:03:42.926 [63571] dbg: replacetags: done replacing tags
+Jul 11 13:03:42.926 [63571] dbg: zoom: loading compiled ruleset from /var/db/spamassassin/compiled/5.010/3.003001
+Jul 11 13:03:42.929 [63571] dbg: zoom: using compiled ruleset in /var/db/spamassassin/compiled/5.010/3.003001/Mail/SpamAssassin/CompiledRegexps/body_0.pm for Mail::SpamAssassin::CompiledRegexps::body_0
+Jul 11 13:03:42.934 [63571] dbg: zoom: able to use 418/418 'body_0' compiled rules (100%)
+Jul 11 13:03:42.935 [63571] dbg: FreeMail: loaded freemail_domains entries: 2110 normal, 26 wildcard
+Jul 11 13:03:42.937 [63571] dbg: plugin: Mail::SpamAssassin::Plugin::Bayes=HASH(0x9a58ea8) implements 'learner_new', priority 0
+Jul 11 13:03:42.937 [63571] dbg: bayes: learner_new self=Mail::SpamAssassin::Plugin::Bayes=HASH(0x9a58ea8), bayes_store_module=Mail::SpamAssassin::BayesStore::DBM
+Jul 11 13:03:42.952 [63571] dbg: bayes: learner_new: got store=Mail::SpamAssassin::BayesStore::DBM=HASH(0x9f74b38)
+Jul 11 13:03:42.952 [63571] dbg: plugin: Mail::SpamAssassin::Plugin::Bayes=HASH(0x9a58ea8) implements 'learner_is_scan_available', priority 0
+Jul 11 13:03:42.953 [63571] dbg: bayes: tie-ing to DB file R/O /bayes/.spamassassin/bayes_toks
+Jul 11 13:03:42.953 [63571] dbg: bayes: tie-ing to DB file R/O /bayes/.spamassassin/bayes_seen
+Jul 11 13:03:42.953 [63571] dbg: bayes: found bayes db version 3
+Jul 11 13:03:42.954 [63571] dbg: bayes: DB journal sync: last sync: 0
+Jul 11 13:03:42.954 [63571] dbg: bayes: not available for scanning, only 184 ham(s) in bayes DB < 200
+Jul 11 13:03:42.954 [63571] dbg: bayes: untie-ing
+Jul 11 13:03:42.954 [63571] dbg: config: score set 0 chosen.
+Jul 11 13:03:42.954 [63571] dbg: message: main message type: text/plain
+Jul 11 13:03:42.955 [63571] dbg: message: ---- MIME PARSER START ----
+Jul 11 13:03:42.955 [63571] dbg: message: parsing normal part
+Jul 11 13:03:42.955 [63571] dbg: message: ---- MIME PARSER END ----
+Jul 11 13:03:42.955 [63571] dbg: plugin: Mail::SpamAssassin::Plugin::DNSEval=HASH(0x9c02538) implements 'check_start', priority 0
+Jul 11 13:03:42.955 [63571] dbg: plugin: Mail::SpamAssassin::Plugin::Rule2XSBody=HASH(0x9c51054) implements 'check_start', priority 0
+Jul 11 13:03:42.959 [63571] dbg: bayes: tie-ing to DB file R/O /bayes/.spamassassin/bayes_toks
+Jul 11 13:03:42.959 [63571] dbg: bayes: tie-ing to DB file R/O /bayes/.spamassassin/bayes_seen
+Jul 11 13:03:42.959 [63571] dbg: bayes: found bayes db version 3
+Jul 11 13:03:42.959 [63571] dbg: bayes: DB journal sync: last sync: 0
+Jul 11 13:03:42.960 [63571] dbg: bayes: not available for scanning, only 184 ham(s) in bayes DB < 200
+Jul 11 13:03:42.960 [63571] dbg: bayes: untie-ing
+Jul 11 13:03:42.960 [63571] dbg: plugin: Mail::SpamAssassin::Plugin::Check=HASH(0x9a50f98) implements 'check_main', priority 0
+Jul 11 13:03:42.960 [63571] dbg: config: internal_networks not configured, using trusted_networks configuration for internal_networks; if you really want internal_networks to only contain the required 127/8 add 'internal_networks !0/0' to your configuration
+Jul 11 13:03:42.960 [63571] dbg: metadata: X-Spam-Relays-Trusted: 
+Jul 11 13:03:42.960 [63571] dbg: metadata: X-Spam-Relays-Untrusted: 
+Jul 11 13:03:42.960 [63571] dbg: metadata: X-Spam-Relays-Internal: 
+Jul 11 13:03:42.960 [63571] dbg: metadata: X-Spam-Relays-External: 
+Jul 11 13:03:42.961 [63571] dbg: message: no encoding detected
+Jul 11 13:03:42.961 [63571] dbg: plugin: Mail::SpamAssassin::Plugin::URIDNSBL=HASH(0x980b180) implements 'parsed_metadata', priority 0
+Jul 11 13:03:42.961 [63571] dbg: dns: is_dns_available() last checked 1310378623.0 seconds ago; re-checking
+Jul 11 13:03:42.961 [63571] dbg: dns: is DNS available? 0
+Jul 11 13:03:42.961 [63571] dbg: rules: local tests only, ignoring RBL eval
+Jul 11 13:03:42.963 [63571] dbg: check: running tests for priority: -1000
+Jul 11 13:03:42.963 [63571] dbg: plugin: Mail::SpamAssassin::Plugin::Rule2XSBody=HASH(0x9c51054) implements 'check_rules_at_priority', priority 0
+Jul 11 13:03:42.963 [63571] dbg: rules: running one_line_body tests; score so far=0
+Jul 11 13:03:42.964 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 508 chars of Mail::SpamAssassin::Plugin::Check::_one_line_body_tests_neg1000_1
+Jul 11 13:03:42.964 [63571] dbg: rules: run_generic_tests - compiling eval code: one_line_body, priority -1000
+Jul 11 13:03:42.964 [63571] dbg: rules: compiled one_line_body tests
+Jul 11 13:03:42.964 [63571] dbg: plugin: Mail::SpamAssassin::Plugin::Rule2XSBody=HASH(0x9c51054) implements 'run_body_fast_scan', priority 0
+Jul 11 13:03:42.965 [63571] dbg: rules: running head tests; score so far=0
+Jul 11 13:03:42.965 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 288 chars of Mail::SpamAssassin::Plugin::Check::_head_tests_neg1000_1
+Jul 11 13:03:42.965 [63571] dbg: rules: run_generic_tests - compiling eval code: head, priority -1000
+Jul 11 13:03:42.965 [63571] dbg: rules: compiled head tests
+Jul 11 13:03:42.965 [63571] dbg: rules: running head_eval tests; score so far=0
+Jul 11 13:03:42.966 [63571] dbg: rules: run_eval_tests - compiling eval code: 9, priority -1000
+Jul 11 13:03:42.967 [63571] dbg: eval: all '*From' addrs: ignore@compiling.spamassassin.taint.org
+Jul 11 13:03:42.968 [63571] dbg: eval: all '*To' addrs: 
+Jul 11 13:03:42.968 [63571] dbg: rules: running body tests; score so far=0
+Jul 11 13:03:42.968 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 231 chars of Mail::SpamAssassin::Plugin::Check::_body_tests_neg1000_1
+Jul 11 13:03:42.969 [63571] dbg: rules: run_generic_tests - compiling eval code: body, priority -1000
+Jul 11 13:03:42.969 [63571] dbg: rules: compiled body tests
+Jul 11 13:03:42.969 [63571] dbg: rules: running uri tests; score so far=0
+Jul 11 13:03:42.969 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 229 chars of Mail::SpamAssassin::Plugin::Check::_uri_tests_neg1000_1
+Jul 11 13:03:42.969 [63571] dbg: rules: run_generic_tests - compiling eval code: uri, priority -1000
+Jul 11 13:03:42.969 [63571] dbg: rules: compiled uri tests
+Jul 11 13:03:42.970 [63571] dbg: rules: running rawbody tests; score so far=0
+Jul 11 13:03:42.970 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 237 chars of Mail::SpamAssassin::Plugin::Check::_rawbody_tests_neg1000_1
+Jul 11 13:03:42.970 [63571] dbg: rules: run_generic_tests - compiling eval code: rawbody, priority -1000
+Jul 11 13:03:42.970 [63571] dbg: rules: compiled rawbody tests
+Jul 11 13:03:42.970 [63571] dbg: rules: running full tests; score so far=0
+Jul 11 13:03:42.970 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 266 chars of Mail::SpamAssassin::Plugin::Check::_full_tests_neg1000_1
+Jul 11 13:03:42.971 [63571] dbg: rules: run_generic_tests - compiling eval code: full, priority -1000
+Jul 11 13:03:42.971 [63571] dbg: rules: compiled full tests
+Jul 11 13:03:42.971 [63571] dbg: rules: running meta tests; score so far=0
+Jul 11 13:03:42.971 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 291 chars of Mail::SpamAssassin::Plugin::Check::_meta_tests_neg1000_1
+Jul 11 13:03:42.971 [63571] dbg: rules: run_generic_tests - compiling eval code: meta, priority -1000
+Jul 11 13:03:42.971 [63571] dbg: rules: compiled meta tests
+Jul 11 13:03:42.972 [63571] dbg: check: running tests for priority: -950
+Jul 11 13:03:42.972 [63571] dbg: rules: running one_line_body tests; score so far=0
+Jul 11 13:03:42.972 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 505 chars of Mail::SpamAssassin::Plugin::Check::_one_line_body_tests_neg950_1
+Jul 11 13:03:42.972 [63571] dbg: rules: run_generic_tests - compiling eval code: one_line_body, priority -950
+Jul 11 13:03:42.973 [63571] dbg: rules: compiled one_line_body tests
+Jul 11 13:03:42.973 [63571] dbg: rules: running head tests; score so far=0
+Jul 11 13:03:42.973 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 286 chars of Mail::SpamAssassin::Plugin::Check::_head_tests_neg950_1
+Jul 11 13:03:42.973 [63571] dbg: rules: run_generic_tests - compiling eval code: head, priority -950
+Jul 11 13:03:42.973 [63571] dbg: rules: compiled head tests
+Jul 11 13:03:42.973 [63571] dbg: rules: running head_eval tests; score so far=0
+Jul 11 13:03:42.974 [63571] dbg: rules: run_eval_tests - compiling eval code: 9, priority -950
+Jul 11 13:03:42.974 [63571] dbg: rules: running body tests; score so far=0
+Jul 11 13:03:42.974 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 229 chars of Mail::SpamAssassin::Plugin::Check::_body_tests_neg950_1
+Jul 11 13:03:42.974 [63571] dbg: rules: run_generic_tests - compiling eval code: body, priority -950
+Jul 11 13:03:42.974 [63571] dbg: rules: compiled body tests
+Jul 11 13:03:42.975 [63571] dbg: rules: running uri tests; score so far=0
+Jul 11 13:03:42.975 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 227 chars of Mail::SpamAssassin::Plugin::Check::_uri_tests_neg950_1
+Jul 11 13:03:42.975 [63571] dbg: rules: run_generic_tests - compiling eval code: uri, priority -950
+Jul 11 13:03:42.975 [63571] dbg: rules: compiled uri tests
+Jul 11 13:03:42.975 [63571] dbg: rules: running rawbody tests; score so far=0
+Jul 11 13:03:42.975 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 235 chars of Mail::SpamAssassin::Plugin::Check::_rawbody_tests_neg950_1
+Jul 11 13:03:42.976 [63571] dbg: rules: run_generic_tests - compiling eval code: rawbody, priority -950
+Jul 11 13:03:42.976 [63571] dbg: rules: compiled rawbody tests
+Jul 11 13:03:42.976 [63571] dbg: rules: running full tests; score so far=0
+Jul 11 13:03:42.976 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 264 chars of Mail::SpamAssassin::Plugin::Check::_full_tests_neg950_1
+Jul 11 13:03:42.976 [63571] dbg: rules: run_generic_tests - compiling eval code: full, priority -950
+Jul 11 13:03:42.976 [63571] dbg: rules: compiled full tests
+Jul 11 13:03:42.977 [63571] dbg: rules: running meta tests; score so far=0
+Jul 11 13:03:42.977 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 289 chars of Mail::SpamAssassin::Plugin::Check::_meta_tests_neg950_1
+Jul 11 13:03:42.977 [63571] dbg: rules: run_generic_tests - compiling eval code: meta, priority -950
+Jul 11 13:03:42.977 [63571] dbg: rules: compiled meta tests
+Jul 11 13:03:42.977 [63571] dbg: check: running tests for priority: -900
+Jul 11 13:03:42.977 [63571] dbg: rules: running one_line_body tests; score so far=0
+Jul 11 13:03:42.978 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 505 chars of Mail::SpamAssassin::Plugin::Check::_one_line_body_tests_neg900_1
+Jul 11 13:03:42.978 [63571] dbg: rules: run_generic_tests - compiling eval code: one_line_body, priority -900
+Jul 11 13:03:42.978 [63571] dbg: rules: compiled one_line_body tests
+Jul 11 13:03:42.978 [63571] dbg: rules: running head tests; score so far=0
+Jul 11 13:03:42.978 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 286 chars of Mail::SpamAssassin::Plugin::Check::_head_tests_neg900_1
+Jul 11 13:03:42.979 [63571] dbg: rules: run_generic_tests - compiling eval code: head, priority -900
+Jul 11 13:03:42.979 [63571] dbg: rules: compiled head tests
+Jul 11 13:03:42.979 [63571] dbg: rules: running head_eval tests; score so far=0
+Jul 11 13:03:42.979 [63571] dbg: rules: run_eval_tests - compiling eval code: 9, priority -900
+Jul 11 13:03:42.980 [63571] dbg: rules: running body tests; score so far=0
+Jul 11 13:03:42.980 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 229 chars of Mail::SpamAssassin::Plugin::Check::_body_tests_neg900_1
+Jul 11 13:03:42.981 [63571] dbg: rules: run_generic_tests - compiling eval code: body, priority -900
+Jul 11 13:03:42.981 [63571] dbg: rules: compiled body tests
+Jul 11 13:03:42.981 [63571] dbg: rules: running uri tests; score so far=0
+Jul 11 13:03:42.981 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 227 chars of Mail::SpamAssassin::Plugin::Check::_uri_tests_neg900_1
+Jul 11 13:03:42.981 [63571] dbg: rules: run_generic_tests - compiling eval code: uri, priority -900
+Jul 11 13:03:42.982 [63571] dbg: rules: compiled uri tests
+Jul 11 13:03:42.982 [63571] dbg: rules: running rawbody tests; score so far=0
+Jul 11 13:03:42.982 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 235 chars of Mail::SpamAssassin::Plugin::Check::_rawbody_tests_neg900_1
+Jul 11 13:03:42.982 [63571] dbg: rules: run_generic_tests - compiling eval code: rawbody, priority -900
+Jul 11 13:03:42.982 [63571] dbg: rules: compiled rawbody tests
+Jul 11 13:03:42.982 [63571] dbg: rules: running full tests; score so far=0
+Jul 11 13:03:42.982 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 264 chars of Mail::SpamAssassin::Plugin::Check::_full_tests_neg900_1
+Jul 11 13:03:42.983 [63571] dbg: rules: run_generic_tests - compiling eval code: full, priority -900
+Jul 11 13:03:42.983 [63571] dbg: rules: compiled full tests
+Jul 11 13:03:42.983 [63571] dbg: rules: running meta tests; score so far=0
+Jul 11 13:03:42.983 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 289 chars of Mail::SpamAssassin::Plugin::Check::_meta_tests_neg900_1
+Jul 11 13:03:42.983 [63571] dbg: rules: run_generic_tests - compiling eval code: meta, priority -900
+Jul 11 13:03:42.984 [63571] dbg: rules: compiled meta tests
+Jul 11 13:03:42.984 [63571] dbg: check: running tests for priority: -400
+Jul 11 13:03:42.984 [63571] dbg: rules: running one_line_body tests; score so far=0
+Jul 11 13:03:42.984 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 505 chars of Mail::SpamAssassin::Plugin::Check::_one_line_body_tests_neg400_1
+Jul 11 13:03:42.984 [63571] dbg: rules: run_generic_tests - compiling eval code: one_line_body, priority -400
+Jul 11 13:03:42.984 [63571] dbg: rules: compiled one_line_body tests
+Jul 11 13:03:42.985 [63571] dbg: rules: running head tests; score so far=0
+Jul 11 13:03:42.985 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 286 chars of Mail::SpamAssassin::Plugin::Check::_head_tests_neg400_1
+Jul 11 13:03:42.985 [63571] dbg: rules: run_generic_tests - compiling eval code: head, priority -400
+Jul 11 13:03:42.985 [63571] dbg: rules: compiled head tests
+Jul 11 13:03:42.985 [63571] dbg: rules: running body tests; score so far=0
+Jul 11 13:03:42.985 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 229 chars of Mail::SpamAssassin::Plugin::Check::_body_tests_neg400_1
+Jul 11 13:03:42.986 [63571] dbg: rules: run_generic_tests - compiling eval code: body, priority -400
+Jul 11 13:03:42.986 [63571] dbg: rules: compiled body tests
+Jul 11 13:03:42.986 [63571] dbg: rules: running uri tests; score so far=0
+Jul 11 13:03:42.986 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 227 chars of Mail::SpamAssassin::Plugin::Check::_uri_tests_neg400_1
+Jul 11 13:03:42.986 [63571] dbg: rules: run_generic_tests - compiling eval code: uri, priority -400
+Jul 11 13:03:42.986 [63571] dbg: rules: compiled uri tests
+Jul 11 13:03:42.987 [63571] dbg: rules: running body_eval tests; score so far=0
+Jul 11 13:03:42.987 [63571] dbg: rules: run_eval_tests - compiling eval code: 11, priority -400
+Jul 11 13:03:42.987 [63571] dbg: rules: running rawbody tests; score so far=0
+Jul 11 13:03:42.987 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 235 chars of Mail::SpamAssassin::Plugin::Check::_rawbody_tests_neg400_1
+Jul 11 13:03:42.987 [63571] dbg: rules: run_generic_tests - compiling eval code: rawbody, priority -400
+Jul 11 13:03:42.987 [63571] dbg: rules: compiled rawbody tests
+Jul 11 13:03:42.988 [63571] dbg: rules: running full tests; score so far=0
+Jul 11 13:03:42.988 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 264 chars of Mail::SpamAssassin::Plugin::Check::_full_tests_neg400_1
+Jul 11 13:03:42.988 [63571] dbg: rules: run_generic_tests - compiling eval code: full, priority -400
+Jul 11 13:03:42.988 [63571] dbg: rules: compiled full tests
+Jul 11 13:03:42.988 [63571] dbg: rules: running meta tests; score so far=0
+Jul 11 13:03:42.989 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 289 chars of Mail::SpamAssassin::Plugin::Check::_meta_tests_neg400_1
+Jul 11 13:03:42.989 [63571] dbg: rules: run_generic_tests - compiling eval code: meta, priority -400
+Jul 11 13:03:42.989 [63571] dbg: rules: compiled meta tests
+Jul 11 13:03:42.989 [63571] dbg: check: running tests for priority: 0
+Jul 11 13:03:42.989 [63571] dbg: rules: running one_line_body tests; score so far=0
+Jul 11 13:03:43.007 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 494 chars of Mail::SpamAssassin::Plugin::Check::_one_line_body_tests_0_1
+Jul 11 13:03:43.008 [63571] dbg: rules: run_generic_tests - compiling eval code: one_line_body, priority 0
+Jul 11 13:03:43.044 [63571] dbg: rules: compiled one_line_body tests
+Jul 11 13:03:43.044 [63571] dbg: zoom: run_body_fast_scan for body_0 start
+Jul 11 13:03:43.045 [63571] dbg: zoom: run_body_fast_scan for body_0 done
+Jul 11 13:03:43.045 [63571] dbg: rules: running head tests; score so far=0
+Jul 11 13:03:43.070 [63571] dbg: rules: flush_evalstr (add_evalstr) compiling 60159 chars of Mail::SpamAssassin::Plugin::Check::_head_tests_0_1
+Jul 11 13:03:43.083 [63571] dbg: rules: flush_evalstr (add_evalstr) compiling 60442 chars of Mail::SpamAssassin::Plugin::Check::_head_tests_0_2
+Jul 11 13:03:43.095 [63571] dbg: rules: flush_evalstr (add_evalstr) compiling 60498 chars of Mail::SpamAssassin::Plugin::Check::_head_tests_0_3
+Jul 11 13:03:43.107 [63571] dbg: rules: flush_evalstr (add_evalstr) compiling 60368 chars of Mail::SpamAssassin::Plugin::Check::_head_tests_0_4
+Jul 11 13:03:43.119 [63571] dbg: rules: flush_evalstr (add_evalstr) compiling 60454 chars of Mail::SpamAssassin::Plugin::Check::_head_tests_0_5
+Jul 11 13:03:43.130 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 36295 chars of Mail::SpamAssassin::Plugin::Check::_head_tests_0_6
+Jul 11 13:03:43.135 [63571] dbg: rules: run_generic_tests - compiling eval code: head, priority 0
+Jul 11 13:03:43.135 [63571] dbg: rules: compiled head tests
+Jul 11 13:03:43.136 [63571] dbg: rules: ran header rule __MISSING_REF ======> got hit: "UNSET"
+Jul 11 13:03:43.136 [63571] dbg: rules: ran header rule __MISSING_REPLY ======> got hit: "UNSET"
+Jul 11 13:03:43.137 [63571] dbg: rules: ran header rule __MSGID_OK_HOST ======> got hit: "@lint_rules>"
+Jul 11 13:03:43.137 [63571] dbg: rules: ran header rule __MSGID_OK_DIGITS ======> got hit: "1310378619"
+Jul 11 13:03:43.137 [63571] dbg: rules: ran header rule __HAS_MESSAGE_ID ======> got hit: "<YES>"
+Jul 11 13:03:43.138 [63571] dbg: rules: ran header rule __HAS_SUBJECT ======> got hit: "<YES>"
+Jul 11 13:03:43.139 [63571] dbg: rules: ran header rule __MSOE_MID_WRONG_CASE ======> got hit: "
+Jul 11 13:03:43.139 [63571] dbg: rules: [...] Message-Id: "
+Jul 11 13:03:43.139 [63571] dbg: rules: ran header rule __HAS_MSGID ======> got hit: "<"
+Jul 11 13:03:43.139 [63571] dbg: rules: ran header rule __SANE_MSGID ======> got hit: "<1310378619@lint_rules>
+Jul 11 13:03:43.139 [63571] dbg: rules: [...] "
+Jul 11 13:03:43.139 [63571] dbg: rules: ran header rule __TO_NO_ARROWS_R ======> got hit: "negative match"
+Jul 11 13:03:43.140 [63571] dbg: rules: ran header rule __HAS_FROM ======> got hit: "<YES>"
+Jul 11 13:03:43.141 [63571] dbg: rules: running head_eval tests; score so far=0
+Jul 11 13:03:43.142 [63571] dbg: rules: run_eval_tests - compiling eval code: 9, priority 0
+Jul 11 13:03:43.148 [63571] dbg: FreeMail: RULE (FREEMAIL_FROM) check_freemail_from
+Jul 11 13:03:43.148 [63571] dbg: FreeMail: all from-addresses: ignore@compiling.spamassassin.taint.org
+Jul 11 13:03:43.149 [63571] dbg: FreeMail: RULE (__freemail_reply) check_freemail_replyto
+Jul 11 13:03:43.149 [63571] dbg: FreeMail: From address: ignore@compiling.spamassassin.taint.org
+Jul 11 13:03:43.149 [63571] dbg: FreeMail: No Reply-To and From is not freemail, skipping check
+Jul 11 13:03:43.150 [63571] dbg: rules: ran eval rule NO_RELAYS ======> got hit (1)
+Jul 11 13:03:43.151 [63571] dbg: rules: ran eval rule __GATED_THROUGH_RCVD_REMOVER ======> got hit (1)
+Jul 11 13:03:43.151 [63571] dbg: FreeMail: RULE (FREEMAIL_REPLYTO_END_DIGIT) check_freemail_header regex:\d@
+Jul 11 13:03:43.151 [63571] dbg: FreeMail: header Reply-To not found from mail
+Jul 11 13:03:43.152 [63571] dbg: FreeMail: RULE (__freemail_replyto) check_freemail_replyto
+Jul 11 13:03:43.152 [63571] dbg: FreeMail: From address: ignore@compiling.spamassassin.taint.org
+Jul 11 13:03:43.152 [63571] dbg: FreeMail: Reply-To is not freemail, skipping check
+Jul 11 13:03:43.152 [63571] dbg: FreeMail: RULE (__freemail_hdr_replyto) check_freemail_header
+Jul 11 13:03:43.152 [63571] dbg: FreeMail: header Reply-To not found from mail
+Jul 11 13:03:43.153 [63571] dbg: spf: cannot get Envelope-From, cannot use SPF
+Jul 11 13:03:43.153 [63571] dbg: spf: def_spf_whitelist_from: could not find useable envelope sender
+Jul 11 13:03:43.153 [63571] dbg: FreeMail: RULE (FREEMAIL_ENVFROM_END_DIGIT) check_freemail_header regex:\d@
+Jul 11 13:03:43.153 [63571] dbg: FreeMail: header EnvelopeFrom not found from mail
+Jul 11 13:03:43.153 [63571] dbg: spf: spf_whitelist_from: could not find useable envelope sender
+Jul 11 13:03:43.154 [63571] dbg: rules: ran eval rule MISSING_HEADERS ======> got hit (1)
+Jul 11 13:03:43.154 [63571] dbg: rules: running body tests; score so far=0.914
+Jul 11 13:03:43.157 [63571] dbg: rules: flush_evalstr (add_evalstr) compiling 61401 chars of Mail::SpamAssassin::Plugin::Check::_body_tests_0_1
+Jul 11 13:03:43.178 [63571] dbg: rules: flush_evalstr (add_evalstr) compiling 60124 chars of Mail::SpamAssassin::Plugin::Check::_body_tests_0_2
+Jul 11 13:03:43.197 [63571] dbg: rules: flush_evalstr (add_evalstr) compiling 60036 chars of Mail::SpamAssassin::Plugin::Check::_body_tests_0_3
+Jul 11 13:03:43.218 [63571] dbg: rules: flush_evalstr (add_evalstr) compiling 60065 chars of Mail::SpamAssassin::Plugin::Check::_body_tests_0_4
+Jul 11 13:03:43.238 [63571] dbg: rules: flush_evalstr (add_evalstr) compiling 60263 chars of Mail::SpamAssassin::Plugin::Check::_body_tests_0_5
+Jul 11 13:03:43.259 [63571] dbg: rules: flush_evalstr (add_evalstr) compiling 61234 chars of Mail::SpamAssassin::Plugin::Check::_body_tests_0_6
+Jul 11 13:03:43.279 [63571] dbg: rules: flush_evalstr (add_evalstr) compiling 60187 chars of Mail::SpamAssassin::Plugin::Check::_body_tests_0_7
+Jul 11 13:03:43.298 [63571] dbg: rules: flush_evalstr (add_evalstr) compiling 61647 chars of Mail::SpamAssassin::Plugin::Check::_body_tests_0_8
+Jul 11 13:03:43.319 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 51112 chars of Mail::SpamAssassin::Plugin::Check::_body_tests_0_9
+Jul 11 13:03:43.335 [63571] dbg: rules: run_generic_tests - compiling eval code: body, priority 0
+Jul 11 13:03:43.335 [63571] dbg: rules: compiled body tests
+Jul 11 13:03:43.453 [63571] dbg: rules: ran body rule __NONEMPTY_BODY ======> got hit: "I"
+Jul 11 13:03:43.596 [63571] dbg: rules: ran body rule __RU_CATER_3_WIN1251 ======> got hit: "negative match"
+Jul 11 13:03:43.619 [63571] dbg: rules: running uri tests; score so far=0.914
+Jul 11 13:03:43.622 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 25409 chars of Mail::SpamAssassin::Plugin::Check::_uri_tests_0_1
+Jul 11 13:03:43.627 [63571] dbg: rules: run_generic_tests - compiling eval code: uri, priority 0
+Jul 11 13:03:43.627 [63571] dbg: rules: compiled uri tests
+Jul 11 13:03:43.627 [63571] dbg: rules: running body_eval tests; score so far=0.914
+Jul 11 13:03:43.630 [63571] dbg: rules: run_eval_tests - compiling eval code: 11, priority 0
+Jul 11 13:03:43.643 [63571] dbg: https_http_mismatch: anchors 0
+Jul 11 13:03:43.651 [63571] dbg: rules: running rawbody tests; score so far=0.914
+Jul 11 13:03:43.653 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 21162 chars of Mail::SpamAssassin::Plugin::Check::_rawbody_tests_0_1
+Jul 11 13:03:43.657 [63571] dbg: rules: run_generic_tests - compiling eval code: rawbody, priority 0
+Jul 11 13:03:43.657 [63571] dbg: rules: compiled rawbody tests
+Jul 11 13:03:43.660 [63571] dbg: rules: running rawbody_eval tests; score so far=0.914
+Jul 11 13:03:43.660 [63571] dbg: rules: run_eval_tests - compiling eval code: 15, priority 0
+Jul 11 13:03:43.661 [63571] dbg: rules: running full tests; score so far=0.914
+Jul 11 13:03:43.661 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 1171 chars of Mail::SpamAssassin::Plugin::Check::_full_tests_0_1
+Jul 11 13:03:43.662 [63571] dbg: rules: run_generic_tests - compiling eval code: full, priority 0
+Jul 11 13:03:43.662 [63571] dbg: rules: compiled full tests
+Jul 11 13:03:43.662 [63571] dbg: rules: running full_eval tests; score so far=0.914
+Jul 11 13:03:43.662 [63571] dbg: rules: run_eval_tests - compiling eval code: 13, priority 0
+Jul 11 13:03:43.663 [63571] dbg: rules: running meta tests; score so far=0.914
+Jul 11 13:03:43.663 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 281 chars of Mail::SpamAssassin::Plugin::Check::_meta_tests_0_1
+Jul 11 13:03:43.663 [63571] dbg: rules: run_generic_tests - compiling eval code: meta, priority 0
+Jul 11 13:03:43.663 [63571] dbg: rules: compiled meta tests
+Jul 11 13:03:43.663 [63571] dbg: check: running tests for priority: 500
+Jul 11 13:03:43.663 [63571] dbg: dns: harvest_dnsbl_queries
+Jul 11 13:03:43.664 [63571] dbg: rules: running one_line_body tests; score so far=0.914
+Jul 11 13:03:43.664 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 500 chars of Mail::SpamAssassin::Plugin::Check::_one_line_body_tests_500_1
+Jul 11 13:03:43.664 [63571] dbg: rules: run_generic_tests - compiling eval code: one_line_body, priority 500
+Jul 11 13:03:43.664 [63571] dbg: rules: compiled one_line_body tests
+Jul 11 13:03:43.664 [63571] dbg: rules: running head tests; score so far=0.914
+Jul 11 13:03:43.665 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 282 chars of Mail::SpamAssassin::Plugin::Check::_head_tests_500_1
+Jul 11 13:03:43.665 [63571] dbg: rules: run_generic_tests - compiling eval code: head, priority 500
+Jul 11 13:03:43.665 [63571] dbg: rules: compiled head tests
+Jul 11 13:03:43.665 [63571] dbg: rules: running body tests; score so far=0.914
+Jul 11 13:03:43.665 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 225 chars of Mail::SpamAssassin::Plugin::Check::_body_tests_500_1
+Jul 11 13:03:43.666 [63571] dbg: rules: run_generic_tests - compiling eval code: body, priority 500
+Jul 11 13:03:43.666 [63571] dbg: rules: compiled body tests
+Jul 11 13:03:43.666 [63571] dbg: rules: running uri tests; score so far=0.914
+Jul 11 13:03:43.666 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 223 chars of Mail::SpamAssassin::Plugin::Check::_uri_tests_500_1
+Jul 11 13:03:43.666 [63571] dbg: rules: run_generic_tests - compiling eval code: uri, priority 500
+Jul 11 13:03:43.666 [63571] dbg: rules: compiled uri tests
+Jul 11 13:03:43.667 [63571] dbg: rules: running rawbody tests; score so far=0.914
+Jul 11 13:03:43.667 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 231 chars of Mail::SpamAssassin::Plugin::Check::_rawbody_tests_500_1
+Jul 11 13:03:43.667 [63571] dbg: rules: run_generic_tests - compiling eval code: rawbody, priority 500
+Jul 11 13:03:43.667 [63571] dbg: rules: compiled rawbody tests
+Jul 11 13:03:43.667 [63571] dbg: rules: running full tests; score so far=0.914
+Jul 11 13:03:43.667 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 260 chars of Mail::SpamAssassin::Plugin::Check::_full_tests_500_1
+Jul 11 13:03:43.668 [63571] dbg: rules: run_generic_tests - compiling eval code: full, priority 500
+Jul 11 13:03:43.668 [63571] dbg: rules: compiled full tests
+Jul 11 13:03:43.668 [63571] dbg: rules: running meta tests; score so far=0.914
+Jul 11 13:03:43.668 [63571] dbg: rules: meta test DIGEST_MULTIPLE has undefined dependency 'DCC_CHECK'
+Jul 11 13:03:43.681 [63571] dbg: rules: meta test FROM_MISSP_DKIM has undefined dependency '__DKIM_DEPENDABLE'
+Jul 11 13:03:43.690 [63571] dbg: rules: meta test RU_PORN1_WIN1251 has undefined dependency '__SA_RUS_HLINK'
+Jul 11 13:03:43.697 [63571] dbg: rules: meta test __RU_SPAM_TRICKS_WIN1251 has undefined dependency '__SA_RUS_MIXED_CYR_LAT'
+Jul 11 13:03:43.697 [63571] dbg: rules: meta test __RU_SPAM_TRICKS_WIN1251 has undefined dependency '__SA_RUS_GAPPY'
+Jul 11 13:03:43.700 [63571] dbg: rules: meta test RU_PORN2_WIN1251 has undefined dependency '__SA_RUS_HLINK'
+Jul 11 13:03:43.705 [63571] dbg: rules: meta test RU_2_SPAM_TRICKS_WIN1251 has undefined dependency '__SA_RUS_MIXED_CYR_LAT'
+Jul 11 13:03:43.705 [63571] dbg: rules: meta test RU_2_SPAM_TRICKS_WIN1251 has undefined dependency '__SA_RUS_GAPPY'
+Jul 11 13:03:43.706 [63571] dbg: rules: meta test RU_PORN3_WIN1251 has undefined dependency '__SA_RUS_HLINK'
+Jul 11 13:03:43.717 [63571] dbg: rules: flush_evalstr (add_evalstr) compiling 60142 chars of Mail::SpamAssassin::Plugin::Check::_meta_tests_500_1
+Jul 11 13:03:43.732 [63571] dbg: rules: flush_evalstr (add_evalstr) compiling 60340 chars of Mail::SpamAssassin::Plugin::Check::_meta_tests_500_2
+Jul 11 13:03:43.751 [63571] dbg: rules: flush_evalstr (run_generic_tests) compiling 50941 chars of Mail::SpamAssassin::Plugin::Check::_meta_tests_500_3
+Jul 11 13:03:43.759 [63571] dbg: rules: run_generic_tests - compiling eval code: meta, priority 500
+Jul 11 13:03:43.760 [63571] dbg: rules: compiled meta tests
+Jul 11 13:03:43.762 [63571] dbg: check: is spam? score=3.652 required=4.5
+Jul 11 13:03:43.762 [63571] dbg: check: tests=MISSING_DATE,MISSING_HEADERS,NO_RECEIVED,NO_RELAYS
+Jul 11 13:03:43.762 [63571] dbg: check: subtests=__GATED_THROUGH_RCVD_REMOVER,__HAS_FROM,__HAS_MESSAGE_ID,__HAS_MSGID,__HAS_SUBJECT,__MISSING_REF,__MISSING_REPLY,__MSGID_OK_DIGITS,__MSGID_OK_HOST,__MSOE_MID_WRONG_CASE,__NONEMPTY_BODY,__NOT_SPOOFED,__RU_CATER_3_WIN1251,__RU_CATER_WIN1251,__RU_MV_PIR_RELATED_WIN1251,__RU_TRAVEL_RELATED_WIN1251,__SANE_MSGID,__TO_NO_ARROWS_R,__UNUSABLE_MSGID
+Jul 11 13:03:43.763 [63571] dbg: timing: total 4504 ms - init: 3696 (82.1%), parse: 0.76 (0.0%), extract_message_metadata: 1.34 (0.0%), get_uri_detail_list: 1.52 (0.0%), tests_pri_-1000: 9 (0.2%), compile_gen: 278 (6.2%), compile_eval: 19 (0.4%), tests_pri_-950: 5 (0.1%), tests_pri_-900: 6 (0.1%), tests_pri_-400: 5 (0.1%), tests_pri_0: 674 (15.0%), tests_pri_500: 99 (2.2%)
+Jul 11 13:03:43.763 [63571] warn: lint: 1 issues detected, please rerun with debug enabled for more information
