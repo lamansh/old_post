@@ -1,0 +1,16 @@
+#!/usr/local/bin/bash
+if [ $# -ne 2 ]
+    then
+    echo "USAGE: search_in_message 'where_search(mailbox)' 'what_search(string)'"
+    echo "EXAMPLE: sharov andrew@nchadvisors.ru" 
+    exit
+fi
+
+for file in /mailstore/user/"$1"/* 	
+do  
+    if  (cat $file | grep "$2" > 0)
+    then
+    echo "$file"
+#    exit 1
+    fi 
+done

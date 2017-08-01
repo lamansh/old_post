@@ -1,0 +1,49 @@
+#!/usr/bin/perl
+use File::stat;
+use File::Copy;
+use Time::localtime;
+$cat="/mailstore/user/mailstore";
+opendir (my $MAILDIR, $cat) || die "Can't open dir $cat: $!";
+#for each file
+   
+    $counter_f =0;
+    $counter_m =0;
+    $size=0;
+    $month_n = localtime->mon();
+    $month_n = $month_n - 1 ;
+    @month_w = qw(Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec);
+    $month = $month_w[$month_n];
+    print"$month\n";
+    exit 0;
+    unlink glob "/mailstore/archive/$month/*";
+    if (opendir (my $ARCHDIR, "/mailstore/archive/$month" )!= 1){ 
+    mkdir "/mailstore/archive/$month", 0400 or warn "$!\n";
+    print "creating dir /mailstore/archive/$month\n"
+    
+    }
+    print "$month\n";
+    while($fname = readdir $MAILDIR){
+    next if $fname =~/^\./;
+    $fnamef = "$cat/$fname";
+    next unless -r $fnamef;
+    $date_string = ctime(stat($fnamef)->ctime);
+    
+    if ($date_string =~m/$month/){
+    #print "1 :: $` :: \n 2 :: $& \n 3:: $+ \n ";
+    $counter_f++ ; 
+    $size = $size + stat($fnamef)->size;   
+    $to = "/mailstore/archive/$month/$fname";
+    copy("$fnamef", "$to");
+    
+	  }
+
+    } 
+    
+print "$counter_f Messages\n";
+$size = $size/1048576;
+print "size $size Mb\n";
+print "Wait archiving $month in progress....\n";
+system("/usr/bin/tar Pcfz /mailstore/archive/$month.tar.gz /mailstore/archive/$month") == 0
+    or die "system:\n @args \n failed: $?";
+print "archiving complete: /mailstore/archive/$month.tar.gz\n";
+unlink glob "/mailstore/archive/$month/*" or warn "$!\n"; 

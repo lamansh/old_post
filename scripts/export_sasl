@@ -1,0 +1,30 @@
+#!/usr/bin/perl -w
+use DB_File;
+use Switch;
+use Storable qw(freeze thaw);
+my ($item, $item1, $len, %hash,%has, @k, $st, $success,$action);
+tie %hash, 'DB_File', '/home/sharov/sasldb2.db' or die;
+print " Enter action:\n 1. Search user \n 2. Add user \n 3. Delete User \n";
+#chomp ($action = <STDIN>);
+#
+#switch ($action){
+#case "1" {search();}
+#case "2" {add();}
+#case "3" {del();}
+#}
+ search();
+sub search {
+#print "Enter Username:\n";
+#chomp($st = <STDIN>);
+@k = keys %hash;
+open (US, '>>users.txt');
+    foreach $item (@k){
+    $item =~m/(.+)(?=post)/;
+    print US substr($1,0,length($item)-2);
+#    print "$1 ";
+    
+#    print "BEFORE:$`\nEQ:$&\nAFTER:$'\nLAST:$+\n";
+    print US " $hash{$item}\n";
+
+    }
+}

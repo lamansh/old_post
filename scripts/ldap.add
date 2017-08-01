@@ -1,0 +1,1 @@
+/usr/local/bin/ldapadd -x -W -D cn=ldap,dc=nchadvisors -f /home/sharov/ldap.user

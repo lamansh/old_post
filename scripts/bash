@@ -1,0 +1,23 @@
+#!/usr/local/bin/bash
+if [ $# -ne 3 ]
+ then
+ echo "USAGE: 1. enter file location 2. string number 3. replacement string";
+ exit
+fi
+a=`cat $1`;
+echo "" > $1;
+let counter=0;
+for line in $a;
+do
+ let "counter = counter+1";
+ 
+  if [ $counter -eq $2 ]
+    then
+    echo $3 >> $1;
+    continue
+  fi
+
+  echo $line >> $1;
+done
+echo "THIS IS NEW FILE:\n";
+ cat $1;

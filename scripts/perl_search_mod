@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+#use strict;
+use ExtUtils::Installed;
+$inst = ExtUtils::Installed->new();
+foreach $v ($inst->modules()){
+$d = $inst->version($v);
+printf "Module: %s\t\tVersion: %s\n", $v, $d;
+printf "$v:\t $d\n";
+}
+
+#system (PERL, "|/usr/local/bin/perl -MCPAN -e 'install DB_File'");
+#close (PERL);

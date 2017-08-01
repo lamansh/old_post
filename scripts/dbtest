@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst)=localtime(time);
+#print $year;
+$fname=sprintf("/usr/database/mold/md%02d%02d%02d.zip",$year-100,$mon+1,$mday);
+print $fname;
+$fzip=sprintf("/usr/local/bin/zip %s /usr/database/mold/invnew.mdb /usr/database/mold/invnew.upd",$fname);
+$fzip2=sprintf("/usr/local/bin/zip %s /usr/database/mold/MP*",$fname);
+

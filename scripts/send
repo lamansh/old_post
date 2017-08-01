@@ -1,0 +1,6 @@
+#!/usr/local/bin/bash
+for file in /usr/mail/*
+do
+    #echo "$file" | xargs cat | sendmail -vt
+    echo "$file" | xargs -o -I {} mv {} /home/sharov/tr
+done

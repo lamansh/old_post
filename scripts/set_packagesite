@@ -1,0 +1,2 @@
+export PACKAGESITE=ftp://ftp.freebsd.org/pub/FreeBSD/ports/i386/packages-8.4-release/Latest/
+set | grep PACKAGESITE

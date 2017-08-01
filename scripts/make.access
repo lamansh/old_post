@@ -1,0 +1,1 @@
+makemap hash /etc/mail/access.db < /etc/mail/access

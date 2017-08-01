@@ -1,0 +1,34 @@
+#!/usr/bin/perl
+$cat="/mailstore/user/";
+opendir (my $MAILDIR, $cat) || die "Can't open dir $cat: $!";
+#for each file
+    $counter_f =0;
+    while($fname = readdir $MAILDIR){
+    next if $fname =~/^\./;	
+        if ((-d "$cat/$fname")&&($fname ne "mailstore")) {
+	#printf("$fname\n");
+	
+	
+	printf("removing mail form $fname\n");
+	$rmcmd="find $cat$fname -type file -mtime +30 -exec rm {} \\;";
+	$rmcmd_result=`$rmcmd`; 
+		
+	printf("$rmcmd_result\n");
+	
+	
+	
+	printf("restoring mailbox $fname\n");
+	$rscmd="su -l cyrus -c '/usr/local/cyrus/bin/reconstruct -r user.$fname'";
+	$rscmd_result = `$rscmd`;
+	
+	printf("$rscmd_result\n");
+	
+	#$restore = `su -l cyrus -c '/usr/local/cyrus/bin/reconstruct -r user.$fname'`;
+	
+	}
+	#printf("$fname:\n");
+    }	    
+	
+
+    
+    

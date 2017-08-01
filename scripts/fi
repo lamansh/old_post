@@ -1,0 +1,14 @@
+#!/usr/local/bin/bash
+for file in /usr/mail/* 
+#/usr/imap/user/trash/SPAM/*
+do
+    #echo "$file" | xargs cat | sendmail -vt
+    #echo "$file" | xargs -o -I {} mv {} /home/sharov/tr
+    #cat "$file" | grep asko-life
+    #echo "$file"
+    #if [ $sc ]
+    #then
+    #echo "$file"
+    #fi 
+    rm "$file"
+done

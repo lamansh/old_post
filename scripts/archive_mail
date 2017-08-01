@@ -1,0 +1,43 @@
+#!/usr/bin/perl
+use File::stat;
+use File::Copy;
+use Time::localtime;
+$cat="/mailstore/user/mailstore";
+opendir (my $MAILDIR, $cat) || die "Can't open dir $cat: $!";
+#for each file
+   
+    $counter_f =0;
+    $counter_m =0;
+    $size=0;
+    while($fname = readdir $MAILDIR){
+    next if $fname =~/^\./;
+    $fnamef = "$cat/$fname";
+    next unless -r $fnamef;
+#    next unless -f $fname;
+#    if ($counter_f>1000) {exit 1;}
+    $date_string = ctime(stat($fnamef)->ctime);
+#    print "$fname created at $date_string\n";
+    $counter_f++ ;    
+   foreach $month (qw /Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec/){
+	
+         if($date_string =~m/$month/){
+	  $counter_m{$month}= $counter_m{$month} + 1;
+	  $size{$month} = $size{$month} + stat($fnamef)->size;    
+          #    print "$date_string\n";
+          $to = "/mailstore/archive/$month/$fname";
+	  #  print "$to";
+	  copy("$fnamef", "$to");
+	  }
+   }
+#    print "$counter_f";
+
+    } 
+    
+#print "counter_m $counter_m\n size $size";
+foreach $month (qw /Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec/){
+$sz=$size{$month}/1048576;
+print "$month size: $sz Mb message number: $counter_m{$month}\n ";
+#print "counter_f $counter_f\n";
+print "Wait archiving $month in progress...."
+system("/usr/bin/tar","Pcfz","/mailstore/archive/$month.tar.gz","$month");
+}

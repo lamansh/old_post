@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+#use File::stat;
+#use Time::localtime;
+
+
+#if ($date =~m/(?<=\s).+(?=.{20})/){
+#print "1 $` 2 $& 3 $+";
+#}
+$month = "Oct";
+#foreach $month (qw /Oct/) {
+#print "Wait archiving $month in progress....\n";
+#@args = ("tar", "Pcfz", "/mailstore/archive/$month.tar.gz","/mailstore/archive/$month");
+system("/usr/bin/tar Pcfz /mailstore/archive/$month.tar.gz /mailstore/archive/$month") == 0
+    or die "system:\n @args \n failed: $?";
+#    }

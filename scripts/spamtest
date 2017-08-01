@@ -1,0 +1,1 @@
+spamassassin -t < /mailstore/user/sharov/66366. > /home/sharov/satest 2>&1

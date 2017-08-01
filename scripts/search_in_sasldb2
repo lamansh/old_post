@@ -1,0 +1,60 @@
+#!/usr/bin/perl -w
+use DB_File;
+use Switch;
+use Storable qw(freeze thaw);
+my ($item,%hash,%has, @k, $st, $success,$action);
+tie %hash, 'DB_File', '/home/sharov/sasldb2.db' or die;
+print " Enter action:\n 1. Search user \n 2. Add user \n 3. Delete User \n";
+chomp ($action = <STDIN>);
+
+switch ($action){
+case "1" {search();}
+case "2" {add();}
+case "3" {del();}
+}
+ 
+sub search {
+print "Enter Username:\n";
+chomp($st = <STDIN>);
+@k = keys %hash;
+foreach $item (@k){
+
+if ($item =~m/$st/) {
+    $item =~m/ .+(?=post)/;
+    print "BEFORE:$`\nEQ:$&\nAFTER:$'\nLAST:$+\n";
+    print "pass is:$hash{$item}\n";
+    $success = 1;
+    $todel = $item; 
+ }
+
+
+}
+if ($success ne 1) {
+    print "No such user\n";
+    }
+}    
+    
+sub add {
+search();
+#print "Success: $success\n";
+    
+if ($success == 1){
+    print "User allready exist\n";
+    exit 1;
+}
+$string = "post.nchadvisors.kiev.uauserPassword";
+print "Enter password:\n";
+$pwd = <STDIN>;
+print "username: $st\npass: $pwd\n";
+$st = "$st"."$string";
+$hash{$st} = $pwd;
+print "successfuly added: $st\n"
+}    
+    
+sub del {
+    search();
+    delete $hash{$todel};
+    print "Successfuly deleted: $todel\n";
+    
+    
+}

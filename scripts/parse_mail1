@@ -1,0 +1,66 @@
+#!/usr/bin/perl
+$cat="/usr/mail/";
+opendir (my $MAILDIR, $cat) || die "Can't open dir $cat: $!";
+#for each file
+    $counter_f =0;
+    while($fname = readdir $MAILDIR){
+    $counter_f = $counter_f +1;
+    next if $fname =~/^\./;
+    $fname = "$cat/$fname";
+    next unless -f $fname and -r $fname;
+    if ($counter_f>100) {exit 1;}
+    $counter_s =0;
+    $success=0;
+    open MESSAGE, "<$fname" || die "Can't open file $fname: $!";
+#    printf("$fname\n");
+
+#for each string in email
+	while ($string = <MESSAGE>){
+	    $counter_s = $counter_s+1;	
+#	    printf ("$string\n");
+#date operation	
+    		if ($success ==0) {
+		    if($string =~m/(\w{3}), (\d{2}) (\w{3}) (\d{4}) (\d{2}:\d{2}:\d{2})/)  {
+		    $date = "$4 $3 $2 $5";
+		
+#		    printf ("$date\n");
+#		    printf ("$string\n");
+		    $success =1;
+		    }
+		}
+#		else { printf("NOT FOUND\n");}
+		if ($string=~m/from (<.*?>)/){
+		$to = "$1";
+		printf ("$1\n");
+		
+		    if($success ==1){
+		    printf ("$1\n");
+		    printf ("$date\n");
+		    last;
+		    }
+		
+		}
+		elsif ($string =~m/Return-Path: (<.*?>)/){
+		$to="$1";
+#		printf ("$1\n");
+		    
+		    if($success ==1){
+		    printf ("$1\n");
+		    printf ("$date\n");
+		    last;
+		    }
+		
+		}
+#		elsif ($string=~m/(?<= )(.*@.*)/){
+#		$to ="$1";
+#		printf ("$1\n");
+#		last;
+#		}
+		
+		
+	    
+	    }	    
+	
+	}
+    
+    
